@@ -1,0 +1,138 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project           : Flamecore Organization
+Name Project      : One Page Nav
+Version           : 1
+Last Change       : 22/12/2017 [Create]
+Github Page       : http://getcore.github.io 
+Framework CSS     : Core Framework v5 Neo
+Framework JS      : jQuery v3.2.1 min.js 
+Plugin 1          : Modernizr Development v3.5.0 min.js
+Plugin 2          : Font Awesome
+Vendor            : jQuery One Page Nav by Trevor Davis
+Author            : Andika Chamberlin // instagram.com/andikachamberlin
+Code License      : MIT
+-------------------------------------------------------------------*/
+
+@media (max-width: 992px){
+	.opn-body-active{
+		overflow: hidden!important;
+	}
+}
+.opn-nav:after{
+	display: table;
+	content: '';
+	clear: both;
+}
+.opn-nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	background-color: #f1f1f1f1;
+	z-index: 9998;
+	border-bottom: 1px solid #ddd;
+}
+.opn-nav-layout{
+	max-width: 1280px;
+	margin: auto;
+}
+.opn-nav-logo{
+	float: left;
+	padding: 0 16px;
+}
+.opn-nav-logo img{
+	display: block;
+	width: 40px;
+	padding-top: 5px;
+}
+
+.opn-nav-items{
+	float: right;
+}
+.opn-nav-items-list{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.opn-nav-items-list li{
+	float: left;
+	position: relative;
+}
+.opn-nav-items-list li:hover{
+	box-shadow: inset 0 -2px #bbb;
+}
+.opn-nav-items-list li a{
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 50px;
+	padding: 0 16px;
+}
+.opn-nav-toggle{
+	float: right;
+}
+.opn-nav-toggle i{
+	line-height: 50px;
+	padding: 0 16px;
+	font-size: 22px;
+	cursor: pointer;
+	position: relative;
+}
+.opn-nav-toggle i:hover{
+	box-shadow: inset 0 -2px #bbb;
+}
+.opn-nav-toggle-active i{
+	box-shadow: inset 0 -2px #bbb;
+}
+@media (min-width: 992px){
+	.opn-nav-toggle{
+		display: none;
+	}
+	.opn-nav-items{
+		display: block!important;
+	}
+}
+@media (max-width: 993px){
+	.opn-nav-items{
+		visibility: hidden;
+		position: fixed;
+		top: 50px;
+		right: 0;
+		bottom: 0;
+		background-color: #f1f1f1;
+		width: 0;
+		transition: 0.3s;
+		overflow: auto;
+		z-index: 10;
+		border-left: 1px solid #ddd;
+	}
+	.opn-nav-items-active{
+		visibility: visible;
+		width: 220px;
+	}
+	
+	.opn-nav-items-list li{
+		float: none;
+		text-align: right;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.opn-nav-items-list li:hover{
+		box-shadow: inset -2px 0 #bbb!important;
+	}
+
+	/*class plugin one page nav js active*/
+	#nav .current{
+		box-shadow: inset -2px 0 #bbb!important;
+	}
+}
+
+/*class plugin one page nav js active*/
+#nav .current{
+	box-shadow: inset 0 -2px #bbb;
+}
+
