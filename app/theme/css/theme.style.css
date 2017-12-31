@@ -1,0 +1,273 @@
+@media (max-width: 992px){
+	.c4-container i{
+		display: block;
+		padding: 16px;
+	}
+}
+.c4-container{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+.c4-column-1{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 50%;
+}
+/*sub 1*/
+.c4-column-1-sub-1{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	border-right: 1px solid #ddd;
+}
+.c4-column-1-sub-2{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	border-right: 1px solid #ddd;
+}
+/*end sub 1*/
+
+.c4-column-2{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	height: 50%;
+}
+
+/*sub column 2*/
+
+.c4-column-2-sub-1{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 50%;
+	border-right: 1px solid #ddd;
+}
+.c4-column-2-sub-2{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	height: 50%;
+}
+.c4-column-2-sub-3{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 50%;
+	height: 50%;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.c4-column-2-sub-4{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	height: 50%;
+	border-top: 1px solid #ddd;
+}
+/*end sub column 2*/
+
+.c4-column-3{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 50%;
+	height: 50%;
+}
+
+/*sub column 3*/
+
+.c4-column-3-sub-1{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+.c4-column-3-sub-2{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+
+/*end sub column 3*/
+
+.c4-column-4{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	height: 50%;
+}
+
+/*sub column 4	*/
+.c4-column-4-sub-1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}	
+.c4-column-4-sub-2{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	border-top: 1px solid #ddd;
+}
+/*end sub column 4*/
+
+.c4-img img{
+	display: block;
+	margin: auto;
+	width: 50px;
+}
+.c4-img i{
+	font-size: 35px;
+}
+
+/*etc theme*/
+.c4-nav:after,
+.c4-nav:before{
+	display: table;
+	content: '';
+	clear: both;
+}
+.c4-nav{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 50px;
+	background-color: #fff;
+	z-index: 9999;
+	border-bottom: 1px solid #ddd;
+	transition: 0.5s;
+}
+.c4-nav-logo{
+	float: right;
+	margin-right: 16px;
+}
+.c4-nav-logo img{
+	display: block;
+	padding-top: 5px;
+	width: 40px;
+}
+.c4-nav-items{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 220px;
+	background-color: #fff;
+	border-right: 1px solid #ddd;
+	overflow: hidden;
+	transition: 0.5s;
+}
+.c4-nav-items-vendor{
+	width: 300px;
+}
+.c4-nav-items:hover{
+	overflow-y: auto;
+}
+.c4-nav-items-list{
+	padding: 0;
+	margin: 0;
+}
+.c4-nav-items-list li:first-child:hover{
+	box-shadow: inset 0 0;
+}
+.c4-nav-items-list li:last-child{
+	margin-bottom: 16px;
+}
+.c4-nav-items-list li{
+	list-style-type: none;
+	display: block;
+	padding: 6px 16px;
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+}
+.c4-nav-items-list li:hover{
+	box-shadow: inset 2px 0 #444;
+}
+#nav .current{
+	box-shadow: inset 2px 0 #444;
+}
+
+.c4-content{
+	padding: 66px 0 0 0;
+	margin-left: 220px;
+	transition: 0.5s;
+}
+.c4-content-vendor{
+	margin-left: 300px;
+}
+
+.c4-nav-toggle{
+	float: left;
+}
+.c4-nav-toggle i{
+	line-height: 50px;
+	padding: 0 16px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.c4-nav-toggle-active i{
+	color: teal;
+}
+
+@media (max-width: 600px){
+	.c4-nav-items{
+		width: 0;
+	}
+	.c4-content{
+		margin-left: 0;
+	}
+
+	.c4-nav-items-active{
+		width: 220px;
+	}
+	.c4-nav-active{
+		left: 220px;
+		right: -220px;
+	}
+	.c4-window{
+		display: none;
+		position: fixed;
+		left: 220px;
+		top: 50px;
+		right: 0;
+		bottom: 0;
+		background-color: transparent;
+		z-index: 9997;
+	}
+	.c4-body-active{
+		overflow: hidden;
+	}
+}
+
+/*end etc theme*/
