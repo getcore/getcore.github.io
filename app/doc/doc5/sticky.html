@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="zxx" class="no-js"> <!--<![endif]-->
+
+<!-- head -->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Core Framework Created by Andika Chamberlin">
+	<meta name="keywords" content="Core Framework">
+	<meta name="author" content="Andika Chamberlin">
+	<!-- title -->
+	<title>Sticky</title>
+	<!-- Favicon -->
+	<link rel="icon" href="../../img/icon-core.png" type="image/x-icon">
+	<!-- core.min.css -->
+	<link rel="stylesheet" href="../../css/core.min.css">
+	<!-- core.setting.css -->
+	<link rel="stylesheet" href="../../css/core.setting.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="../../font/css/font-awesome.min.css">
+	<!-- modernizr development v3.5.0.min.js local -->
+	<script src="../../js/modernizr-development-v3.5.0.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script scr="https://cdnjs.cloudflare.com/ajax/libs/livingston-css3-mediaqueries-js/1.0.0/css3-mediaqueries.min.js"></script>
+    <![endif]-->
+
+</head>
+<!-- end head -->
+
+<!-- body -->
+<body class="height-g">
+
+	<!-- code page -->
+
+	<!-- nav top -->
+	<div class="navtop">
+		<div class="navtop-layout">
+			<div class="navtop-left">
+				<ul class="navtop-left-items">
+					<li>
+						<a href="#">
+							<i class="fa fa-phone"></i>
+							<span> +62 (123) xxxxxxxxx</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-envelope"></i>
+							<span> example@email.com</span>
+						</a>
+					</li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="navtop-right">
+				<ul class="navtop-right-items">
+					<li>
+						<a href="#">
+							<i class="fa fa-user"></i> 
+							<span> Login</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-lock"></i> 
+							<span> Register</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end nav top -->
+
+	<!-- navbar -->
+	<div class="nav" id="navSticky">
+		<!-- nav sticky -->
+		<div class="nav-sticky">
+			<div class="nav-layout">
+				<div class="nav-logo">
+					<a href="#">
+						<img src="../../img/icon-core.png" alt="icon-core">
+					</a>
+				</div>
+				<div class="nav-toggle" id="navToggle">
+					<i class="fa fa-list-ul"></i>
+				</div>
+				<div class="nav-items" id="navItems">
+					<ul class="nav-items-list">
+						<li><a href="#">link</a></li>
+						<li data-toggle1>
+							<a>dropdown
+								<i class="fa fa-angle-down arrow-dropdown"></i>
+							</a>
+							<ul class="dropdown" data-dropdown1>
+								<li><a href="">link 1</a></li>
+								<li><a href="">link 2</a></li>
+								<li><a href="">link 3</a></li>
+							</ul>
+						</li>
+						<li class="position-megadropdown" data-megatoggle1>
+							<a>mega dropdown
+								<i class="fa fa-angle-down arrow-megadropdown"></i>
+							</a>
+							<ul class="mega-dropdown" data-megadropdown1>
+								<li class="row grid layout-m">
+									<ul class="column grid l3 m6 s12 mega-list">
+										<li><a href="#">link 1</a></li>
+										<li><a href="#">link 2</a></li>
+										<li><a href="#">link 3</a></li>
+									</ul>
+									<ul class="column grid l3 m6 s12 mega-list">
+										<li><a href="#">link 1</a></li>
+										<li><a href="#">link 2</a></li>
+										<li><a href="#">link 3</a></li>
+									</ul>
+									<ul class="column grid l3 m6 s12 mega-list">
+										<li><a href="#">link 1</a></li>
+										<li><a href="#">link 2</a></li>
+										<li><a href="#">link 3</a></li>
+									</ul>
+									<ul class="column grid l3 m6 s12 mega-list">
+										<li><a href="#">link 1</a></li>
+										<li><a href="#">link 2</a></li>
+										<li><a href="#">link 3</a></li>
+									</ul>
+								</li>
+								<li class="mega-all-link"><a href="#">All Link</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="nav-search">
+								<li class="nav-search-input">
+									<form action="#" method="get">
+										<input type="text" name="search" placeholder="search">
+										<i class="fa fa-search nav-icon-search"></i>
+									</form>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end navbar -->
+
+<div class="deep">
+<xmp><!-- nav top -->
+<div class="navtop">
+    <div class="navtop-layout">
+        <div class="navtop-left">
+            <ul class="navtop-left-items">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-phone"></i>
+                        <span> +62 (123) xxxxxxxxx</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-envelope"></i>
+                        <span> example@email.com</span>
+                    </a>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navtop-right">
+            <ul class="navtop-right-items">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i> 
+                        <span> Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-lock"></i> 
+                        <span> Register</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- end nav top -->
+
+<!-- navbar -->
+<div class="nav" id="navSticky">
+    <!-- nav sticky -->
+    <div class="nav-sticky">
+        <div class="nav-layout">
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="img/icon-core.png" alt="icon-core">
+                </a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fa fa-list-ul"></i>
+            </div>
+            <div class="nav-items" id="navItems">
+                <ul class="nav-items-list">
+                    <li><a href="#">link</a></li>
+                    <li data-toggle1>
+                        <a>dropdown
+                            <i class="fa fa-angle-down arrow-dropdown"></i>
+                        </a>
+                        <ul class="dropdown" data-dropdown1>
+                            <li><a href="">link 1</a></li>
+                            <li><a href="">link 2</a></li>
+                            <li><a href="">link 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="position-megadropdown" data-megatoggle1>
+                        <a>mega dropdown
+                            <i class="fa fa-angle-down arrow-megadropdown"></i>
+                        </a>
+                        <ul class="mega-dropdown" data-megadropdown1>
+                            <li class="row grid layout-m">
+                                <ul class="column grid l3 m6 s12 mega-list">
+                                    <li><a href="#">link 1</a></li>
+                                    <li><a href="#">link 2</a></li>
+                                    <li><a href="#">link 3</a></li>
+                                </ul>
+                                <ul class="column grid l3 m6 s12 mega-list">
+                                    <li><a href="#">link 1</a></li>
+                                    <li><a href="#">link 2</a></li>
+                                    <li><a href="#">link 3</a></li>
+                                </ul>
+                                <ul class="column grid l3 m6 s12 mega-list">
+                                    <li><a href="#">link 1</a></li>
+                                    <li><a href="#">link 2</a></li>
+                                    <li><a href="#">link 3</a></li>
+                                </ul>
+                                <ul class="column grid l3 m6 s12 mega-list">
+                                    <li><a href="#">link 1</a></li>
+                                    <li><a href="#">link 2</a></li>
+                                    <li><a href="#">link 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="mega-all-link"><a href="#">All Link</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="nav-search">
+                            <li class="nav-search-input">
+                                <form action="#" method="get">
+                                    <input type="text" name="search" placeholder="search">
+                                    <i class="fa fa-search nav-icon-search"></i>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end navbar -->
+</xmp>
+</div>
+
+<div class="deep">
+    <p class="section">JS</p>
+<xmp>$(window).scroll(function(){
+
+    var scroll = $(this).scrollTop();
+
+    // sticky
+
+    if(scroll > $("#navSticky").offset().top - 0){
+        $(".nav-sticky").addClass("sticky");
+    }else{
+        $(".nav-sticky").removeClass("sticky");
+    }
+});
+</xmp>
+</div>
+
+	<!-- end code page -->
+	
+	<!-- script -->
+
+	<!-- jquery v3.2.1.min.js -->
+	<script src="../../js/jquery.min.js"></script>
+	<!-- core.js -->
+	<script src="../../js/core.min.js"></script>
+	<script>
+		$(window).scroll(function(){
+
+			var scroll = $(this).scrollTop();
+
+			// sticky
+
+			if(scroll > $("#navSticky").offset().top - 0){
+				$(".nav-sticky").addClass("sticky");
+			}else{
+				$(".nav-sticky").removeClass("sticky");
+			}
+		});
+	</script>
+
+	<!-- end script -->
+
+</body>
+</html>
