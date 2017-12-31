@@ -1,0 +1,4578 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="zxx" class="no-js" id="toTop"> <!--<![endif]-->
+
+<!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Core Framework Documentation Created By Andika Chamberlin">
+    <meta name="keywords" content="Core Framework Documentation">
+    <meta name="author" content="Andika Chamberlin">
+    <!-- title -->
+    <title>Documentation</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/icon-core.png" type="image/x-icon">
+    <!-- core.min.css -->
+    <link rel="stylesheet" href="css/core.min.css">
+    <!-- core.setting.css -->
+    <link rel="stylesheet" href="css/core.setting.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="theme/css/theme.style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
+    <!-- modernizr development v3.5.0.min.js local -->
+    <!-- <script src="js/modernizr-development-v3.5.0.min.js"></script> -->
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script scr="https://cdnjs.cloudflare.com/ajax/libs/livingston-css3-mediaqueries-js/1.0.0/css3-mediaqueries.min.js"></script>
+    <![endif]-->
+
+</head>
+<!-- end head -->
+
+<!-- body -->
+<body>
+    
+    <div class="c4-nav" id="c4Nav">
+        <div class="c4-nav-logo">
+            <a href="index.html">
+                <img src="img/icon-core.png">
+            </a>
+        </div>
+        <div class="c4-nav-items" id="c4NavItems">
+            <ul class="c4-nav-items-list" id="nav">
+                <li class="size-40">
+                    <a href="index.html">Core<sup class="size-12">framework</sup></a>
+                </li>
+                <li class="current"><a href="#typography">Typography</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#display">Display</a></li>
+                <li><a href="#position">Position</a></li>
+                <li><a href="#border">Border</a></li>
+                <li><a href="#layout">Layout</a></li>
+                <li><a href="#mediaquery">Media Query</a></li>
+                <li><a href="#iframe">Iframe</a></li>
+                <li><a href="#height">Height</a></li>
+                <li><a href="#filtercss3">Filter CSS3</a></li>
+                <li><a href="#shadow">Shadow</a></li>
+                <li><a href="#overflow">Overflow</a></li>
+                <li><a href="#color">Color</a></li>
+                <li><a href="#header">Header</a></li>
+                <li><a href="#navbar">Nav</a></li>
+                <li><a href="#aside">Aside</a></li>
+                <li><a href="#section">Section</a></li>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#footer">Footer</a></li>
+                <li><a href="#parallax">Parallax
+                <li><a href="#device">Device</a></li>
+                <li><a href="#landingelement">Landing Element</a></li>
+                <li><a href="#loadanimation">Load Animation</a></li>
+                <li><a href="#scrolltop">To Top</a></li>
+                <li><a href="#loadpage">Load Page</a></li>
+                <li><a href="#ticket">Ticket</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#comingsoon">Coming Soon</a></li>
+                <li><a href="#badge">Badge</a></li>
+                <li><a href="#post">Post</a></li>
+                <li><a href="#tag">Tag</a></li>
+                <li><a href="#pagination">Pagination</a></li>
+                <li><a href="#namecard">Name Card</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#filterjquery">Filter Jquery</a></li>
+                <li><a href="#skillscard">Skills Card</a></li>
+                <li><a href="#alert">Alert</a></li>
+                <li><a href="#modal">Modal</a></li>
+                <li><a href="#tooltip">Tooltip</a></li>
+                <li><a href="#popup">Popup</a></li>
+                <li><a href="#button">Button</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#accordion">Accordion</a></li>
+                <li><a href="#filter">Filter Tab</a></li>
+                <li><a href="#navhorizontal">Nav Horizontal</a></li>
+                <li><a href="#dropdown">Dropdown</a></li>
+            </ul>
+        </div>
+        <div class="c4-nav-toggle" id="c4NavToggle">
+            <i class="fa fa-list-ul"></i>
+        </div>
+    </div>
+
+    <div class="c4-window" id="c4Window"></div>
+
+    <!-- content -->
+    <div class="c4-content">
+        <!-- layout -->
+        <div class="layout-s">
+
+            <!-- typography -->
+            <div id="typography">
+
+                <div class="interior size-22">Typography</div>
+
+                <!-- doc -->
+                    
+                <div class="row grid-eq">
+                    <div class="column grid eq s12">
+<xmp>.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.justify-align {
+  text-align: justify;
+}
+
+.break-word{
+  word-wrap: break-word;
+}
+
+.nowrap{
+  white-space: nowrap;
+}
+
+.ellipsis{
+  text-overflow: ellipsis;
+}
+
+.text-overflow{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bidi-override{
+  direction:rtl;
+  unicode-bidi:bidi-override;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.paragraph{
+  text-indent:2em;
+}
+
+.subheader{
+  font-size:18px;
+  font-weight:500;
+}
+
+.quote{
+  font-style: italic;
+}
+
+.list{
+  padding:0;
+  margin: 0;
+  list-style-type:none;
+}
+
+.list li{
+  padding:3px 0;
+  list-style-type: none;
+}
+</xmp>
+                    </div>
+                    <div class="column grid eq l3 m6 s12">
+<xmp>.size-1{
+  font-size: 1px;
+}
+.size-2{
+  font-size: 2px;
+}
+.size-3{
+  font-size: 3px;
+}
+.size-4{
+  font-size: 4px;
+}
+.size-5{
+  font-size: 5px;
+}
+.size-6{
+  font-size: 6px;
+}
+.size-7{
+  font-size: 7px;
+}
+.size-8{
+  font-size: 8px;
+} 
+.size-9{
+  font-size: 9px;
+}
+.size-10{
+  font-size: 10px;
+}
+.size-11{
+  font-size: 11px;
+}
+.size-12{
+  font-size: 12px;
+}
+.size-13{
+  font-size: 13px;
+}
+.size-14{
+  font-size: 14px;
+}
+.size-15{
+  font-size: 15px;
+}
+.size-16{
+  font-size: 16px;
+}
+</xmp>
+                    </div>
+                    <div class="column grid eq l3 m6 s12">
+<xmp>.size-17{
+  font-size: 17px;
+}
+.size-18{
+  font-size: 18px;
+}
+.size-19{
+  font-size: 19px;
+}
+.size-20{
+  font-size: 20px;
+}
+.size-21{
+  font-size: 21px;
+}
+.size-22{
+  font-size: 22px;
+}
+.size-23{
+  font-size: 23px;
+}
+.size-24{
+  font-size: 24px;
+}
+.size-25{
+  font-size: 25px;
+}
+.size-26{
+  font-size: 26px;
+}
+.size-27{
+  font-size: 27px;
+}
+.size-28{
+  font-size: 28px;
+}
+.size-29{
+  font-size: 29px;
+}
+.size-30{
+  font-size: 30px;
+}
+.size-31{
+  font-size: 31px;
+}
+.size-32{
+  font-size: 32px;
+}
+</xmp>
+                    </div>
+                    <div class="column grid eq l3 m6 s12">
+<xmp>.size-33{
+  font-size: 33px;
+}
+.size-34{
+  font-size: 34px;
+}
+.size-35{
+  font-size: 35px;
+}
+.size-36{
+  font-size: 36px;
+}
+.size-37{
+  font-size: 37px;
+}
+.size-38{
+  font-size: 38px;
+}
+.size-39{
+  font-size: 39px;
+}
+.size-40{
+  font-size: 40px;
+}
+.size-41{
+  font-size: 41px;
+}
+.size-42{
+  font-size: 42px;
+}
+.size-43{
+  font-size: 43px;
+}
+.size-44{
+  font-size: 44px;
+}
+.size-45{
+  font-size: 45px;
+}
+.size-46{
+  font-size: 46px;
+}
+.size-47{
+  font-size: 47px;
+}
+.size-48{
+  font-size: 48px;
+}
+</xmp>
+                    </div>
+                    <div class="column grid eq l3 m6 s12">
+<xmp>.size-49{
+  font-size: 49px;
+}
+.size-50{
+  font-size: 50px;
+}
+.size-51{
+  font-size: 51px;
+}
+.size-52{
+  font-size: 52px;
+}
+.size-53{
+  font-size: 53px;
+}
+.size-54{
+  font-size: 54px;
+}
+.size-55{
+  font-size: 55px;
+}
+.size-56{
+  font-size: 56px;
+}
+.size-57{
+  font-size: 57px;
+}
+.size-58{
+  font-size: 58px;
+}
+.size-59{
+  font-size: 59px;
+}
+.size-60{
+  font-size: 60px;
+}
+.size-61{
+  font-size: 61px;
+}
+.size-62{
+  font-size: 62px;
+}
+.size-63{
+  font-size: 63px;
+}
+.size-64{
+  font-size: 64px;
+}
+</xmp>
+                    </div>
+                </div>
+
+                <!-- end doc -->
+
+
+            </div>
+            <!-- end typhography -->
+
+            <!-- table -->
+            <div class="deep" id="tables">
+
+                <div class="size-22 section">Tables</div>
+
+                <!-- doc -->
+                
+                <div class="scroll-table">
+                    <table class="table">
+                        <tr>
+                            <th>header 1</th>
+                            <th>header 2</th>
+                            <th>header 3</th>
+                        </tr>
+                        <tr>
+                            <td>col 1</td>
+                            <td>col 2</td>
+                            <td>col 3</td>
+                        </tr>
+                        <tr>
+                            <td>col 1</td>
+                            <td>col 2</td>
+                            <td>col 3</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="scroll-table">
+    <table class="table">
+        <tr>
+            <th>header 1</th>
+            <th>header 2</th>
+            <th>header 3</th>
+        </tr>
+        <tr>
+            <td>col 1</td>
+            <td>col 2</td>
+            <td>col 3</td>
+        </tr>
+        <tr>
+            <td>col 1</td>
+            <td>col 2</td>
+            <td>col 3</td>
+        </tr>
+    </table>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end tables -->
+
+            <!-- display -->
+            <div class="deep" id="display">
+
+                <div class="size-22 section">Display</div>
+
+<!-- code -->
+
+<xmp>.inline{
+  display:inline!important;
+}
+
+.block{
+  display:block!important;
+}
+
+@media (max-width:600px){
+  .hs{display:none!important}
+}
+
+@media (max-width:992px) and (min-width:601px){
+  .hm{display:none!important}
+}
+
+@media (min-width:993px){
+  .hl{display:none!important}
+}
+
+.hide{
+  display:none!important
+}
+
+.show{
+  display:block!important
+}
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  display-->
+
+            <!-- position -->
+            <div class="deep" id="position">
+
+                <div class="size-22 section">Position</div>
+
+                <!-- doc -->
+
+<xmp>.relative{
+  position: relative;
+}
+
+.absolute{
+  position: absolute
+}
+
+.static{
+  position:static;
+}
+
+.fixed{
+  position:fixed;
+  left:0;
+  right:0;
+}
+
+.fixed-top{
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+}
+
+.fixed-bottom{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+.position-container{
+  position: relative
+}
+</xmp> 
+
+                <div class="relative height-s border-solid">
+                    <div class="position-topleft">
+                        topleft
+                    </div>
+                    <div class="position-topright">
+                        topright
+                    </div>
+                    <div class="position-bottomleft">
+                        bottomleft
+                    </div>
+                    <div class="position-bottomright">
+                        bottomright
+                    </div>
+                    <div class="position-middle">
+                        middle
+                    </div>
+                    <div class="position-topmiddle">
+                        topmiddle
+                    </div>
+                    <div class="position-bottommiddle">
+                        bottommiddle
+                    </div>
+                    <div class="position-leftmiddle">
+                        leftmiddle
+                    </div>
+                    <div class="position-rightmiddle">
+                        rightmiddle
+                    </div>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="relative height-s border-solid">
+    <div class="position-topleft">
+        topleft
+    </div>
+    <div class="position-topright">
+        topright
+    </div>
+    <div class="position-bottomleft">
+        bottomleft
+    </div>
+    <div class="position-bottomright">
+        bottomright
+    </div>
+    <div class="position-middle">
+        middle
+    </div>
+    <div class="position-topmiddle">
+        topmiddle
+    </div>
+    <div class="position-bottommiddle">
+        bottommiddle
+    </div>
+    <div class="position-leftmiddle">
+        leftmiddle
+    </div>
+    <div class="position-rightmiddle">
+        rightmiddle
+    </div>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  position -->
+
+            <!-- border -->
+            <div class="deep" id="border">
+
+                <div class="size-22 section">Border</div>
+
+
+<!-- code -->
+
+<xmp>.border-none{
+  border: none!important;
+}
+.border-dashed-bottom{
+  border-bottom: 1px  dashed #ddd;
+}
+.border-dashed{
+  border: 1px  dashed #ddd;
+}
+.border-solid-bottom{
+  border-bottom: 1px solid #ddd;
+}
+.border-solid{
+  border: 1px  solid #ddd;
+}
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  border -->
+
+            <!-- layout -->
+            <div class="deep" id="layout">
+
+                <div class="size-22 section">Layout</div>
+
+
+<!-- code -->
+
+<xmp>.layout{
+  max-width: 1024px;
+  margin: auto;
+}
+.layout-t{
+  max-width: 640px;
+  margin: auto;
+}
+.layout-s{
+  max-width: 800px;
+  margin: auto;
+}
+.layout-m{
+  max-width: 1280px;
+  margin: auto;
+}
+.layout-l{
+  max-width: 1440px;
+  margin: auto;
+}
+.layout-g{
+  max-width: 1600px;
+  margin: auto;
+}
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  layout-->
+
+            <!-- Media Query -->
+            <div class="deep" id="mediaquery">
+
+                <div class="size-22 section">Media Query</div>
+
+                <!-- doc -->
+                
+                <div class="mq-smartphone">
+                    smartphone
+                </div>
+                <div class="mq-tablet">
+                    Tablet
+                </div>
+                <div class="mq-laptop">
+                    Laptop
+                </div>
+                <div class="mq-computer">
+                    desktop
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="mq-smartphone">
+    smartphone
+</div>
+<div class="mq-tablet">
+    Tablet
+</div>
+<div class="mq-laptop">
+    Laptop
+</div>
+<div class="mq-computer">
+    desktop
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  -->
+
+            <!-- iframe -->
+            <div class="deep" id="iframe">
+
+                <div class="size-22 section">Iframe</div>
+
+<!-- code -->
+
+<xmp>.iframe{
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ddd;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.iframe-t{
+  border: 1px solid #ddd;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.iframe-s{
+  border: 1px solid #ddd;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.iframe-m{
+  border: 1px solid #ddd;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+.iframe-l{
+  border: 1px solid #ddd;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+.iframe-g{
+  border: 1px solid #ddd;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 1024px;
+}
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end iframe -->
+
+            <!-- height -->
+            <div class="deep" id="height">
+
+                <div class="size-22 section">Height</div>
+
+<!-- code -->
+
+<xmp>.height{
+  height: 800px;
+}
+.height-t{
+  height: 200px;
+}
+.height-s{
+  height: 400px;
+}
+.height-m{
+  height: 1000px;
+}
+.height-l{
+  height: 2000px;
+}
+.height-g{
+  height: 3000px;
+}
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end height -->
+
+            <!-- filter -->
+            <div id="filtercss3">
+
+                <div class="size-22 equal">Filter CSS3</div>
+
+                <!-- doc -->
+
+                <div class="interior">
+                    <img src="img/slider3.jpg" alt="filterCSS3">
+                </div>
+
+                <div class="row grid-eq">
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">blur</div>
+                        <img class="blur" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">brightness-min</div>
+                        <img class="brightness-min" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">brightness-max</div>
+                        <img class="brightness-max" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">contrast-min</div>
+                        <img class="contrast-min" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">contrast-max</div>
+                        <img class="contrast-max" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">drop-shadow</div>
+                        <img class="drop-shadow" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">grayscale</div>
+                        <img class="grayscale" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">hue-rotate-100deg</div>
+                        <img class="hue-rotate-100deg" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">hue-rotate-200deg</div>
+                        <img class="hue-rotate-200deg" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">hue-rotate-300deg</div>
+                        <img class="hue-rotate-300deg" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">hue-rotate-400deg</div>
+                        <img class="hue-rotate-400deg" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">hue-rotate-500deg</div>
+                        <img class="hue-rotate-500deg" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">hue-rotate-600deg</div>
+                        <img class="hue-rotate-600deg" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">hue-rotate-700deg</div>
+                        <img class="hue-rotate-700deg" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">hue-rotate-800deg</div>
+                        <img class="hue-rotate-800deg" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">hue-rotate-900deg</div>
+                        <img class="hue-rotate-900deg" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">hue-rotate-1000deg</div>
+                        <img class="hue-rotate-1000deg" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">invert</div>
+                        <img class="invert" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">opacity-max</div>
+                        <img class="opacity-max" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">opacity-min</div>
+                        <img class="opacity-min" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">saturate-min</div>
+                        <img class="saturate-min" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">saturate-max</div>
+                        <img class="saturate-max" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                    <div class="column grid-eq l3 m6 s12">
+                        <div class="section">sepia</div>
+                        <img class="sepia" src="img/slider3.jpg" alt="filterCSS3">
+                    </div>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+<div class="deep">
+<xmp><div class="row grid-eq">
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">blur</div>
+        <img class="blur" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">brightness-min</div>
+        <img class="brightness-min" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">brightness-max</div>
+        <img class="brightness-max" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">contrast-min</div>
+        <img class="contrast-min" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">contrast-max</div>
+        <img class="contrast-max" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">drop-shadow</div>
+        <img class="drop-shadow" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">grayscale</div>
+        <img class="grayscale" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">hue-rotate-100deg</div>
+        <img class="hue-rotate-100deg" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">hue-rotate-200deg</div>
+        <img class="hue-rotate-200deg" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">hue-rotate-300deg</div>
+        <img class="hue-rotate-300deg" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">hue-rotate-400deg</div>
+        <img class="hue-rotate-400deg" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">hue-rotate-500deg</div>
+        <img class="hue-rotate-500deg" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">hue-rotate-600deg</div>
+        <img class="hue-rotate-600deg" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">hue-rotate-700deg</div>
+        <img class="hue-rotate-700deg" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">hue-rotate-800deg</div>
+        <img class="hue-rotate-800deg" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">hue-rotate-900deg</div>
+        <img class="hue-rotate-900deg" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">hue-rotate-1000deg</div>
+        <img class="hue-rotate-1000deg" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">invert</div>
+        <img class="invert" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">opacity-max</div>
+        <img class="opacity-max" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">opacity-min</div>
+        <img class="opacity-min" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">saturate-min</div>
+        <img class="saturate-min" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">saturate-max</div>
+        <img class="saturate-max" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+    <div class="column grid-eq l3 m6 s12">
+        <div class="section">sepia</div>
+        <img class="sepia" src="img/slider3.jpg" alt="filterCSS3">
+    </div>
+</div>
+</xmp>
+</div>
+
+<!-- end code -->
+
+            </div>
+            <!-- end filter -->
+
+            <!-- shadow -->
+            <div class="deep" id="shadow">
+
+                <div class="size-22 section">Shadow</div>
+
+                <!-- doc -->
+
+                <div class="equal border-solid">
+                    <div class="equal section box-shadow">
+                        Box Shadow
+                    </div>
+                    <span class="text-shadow">
+                        Box Shadow
+                    </spn>
+                </div> 
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="box-shadow">
+    Box Shadow
+</div>
+<span class="text-shadow">
+    Box Shadow
+</spn>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end shadow -->
+
+            <!-- overflow -->
+            <div class="deep" id="overflow">
+
+                <div class="size-22 section">Overflow</div>
+
+<!-- code -->
+
+<xmp>.overflow-auto{
+  overflow: auto;
+}
+.overflow-hidden{
+  overflow: hidden;
+}
+.overflow-y{
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.overflow-x{
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  overflow -->
+
+            <!-- color -->
+            <div class="deep" id="color">
+
+                <div class="size-22 section">Color</div>
+
+                <div class="row">
+                    <div class="column l3 m6 s12">
+                        
+                        
+                            <div class="bg-pink equal">
+                                bg-pink
+                            </div>
+                       
+                        
+                            <div class="bg-lightpink equal">
+                                bg-lightpink
+                            </div>
+                        
+                        
+                            <div class="bg-hotpink equal">
+                                bg-hotpink
+                            </div>
+                        
+                        
+                            <div class="bg-deeppink equal">
+                                bg-deeppink
+                            </div>
+                        
+                        
+                            <div class="bg-palevioletred equal">
+                                bg-palevioletred
+                            </div>
+                         
+                        
+                            <div class="bg-mediumvioletred equal">
+                                bg-mediumvioletred
+                            </div>
+                       
+                        
+                            <div class="bg-lightsalmon equal">
+                                bg-lightsalmon
+                            </div>
+                       
+                        
+                            <div class="bg-salmon equal">
+                                salmon
+                            </div>
+                        
+                        
+                            <div class="bg-darksalmon equal">
+                                bg-darksalmon
+                            </div>
+                        
+                        
+                            <div class="bg-lightcoral equal">
+                                bg-lightcoral
+                            </div>
+                        
+                        
+                            <div class="bg-indianred equal">
+                                bg-indianred
+                            </div>
+                        
+                        
+                            <div class="bg-crimson equal">
+                                bg-crimson
+                            </div>
+                        
+                        
+                            <div class="bg-red equal">
+                                bg-red
+                            </div>
+                        
+                        
+                            <div class="bg-firebrick equal">
+                                bg-firebrick
+                            </div>
+                        
+                        
+                            <div class="bg-darkred equal">
+                                bg-darkred
+                            </div>
+                        
+                        
+                        
+                            <div class="bg-orange equal">
+                                bg-orange
+                            </div>
+                        
+                        
+                            <div class="bg-darkorange equal">
+                                bg-darkorange
+                            </div>
+                        
+                        
+                            <div class="bg-coral equal">
+                                bg-coral
+                            </div>
+                        
+                        
+                            <div class="bg-tomato equal">
+                                bg-tomato
+                            </div>
+                        
+                        
+                            <div class="bg-orangered equal">
+                                bg-orangered
+                            </div>
+                        
+                        
+                            <div class="bg-cornsilk equal">
+                                bg-cornsilk
+                            </div>
+                        
+                        
+                            <div class="bg-blanchedalmond equal">
+                                bg-blanchedalmond
+                            </div>
+                        
+                        
+                            <div class="bg-bisque equal">
+                                bg-bisque
+                            </div>
+                        
+                        
+                            <div class="bg-navajowhite equal">
+                                bg-navajowhite
+                            </div>
+                        
+                        
+                            <div class="bg-wheat equal">
+                                bg-wheat
+                            </div>
+                        
+                        
+                            <div class="bg-burlywood equal">
+                                bg-burlywood
+                            </div>
+                        
+                        
+                            <div class="bg-tan equal">
+                                bg-tan
+                            </div>
+                        
+                        
+                            <div class="bg-rosybrown equal">
+                                bg-rosybrown
+                            </div>
+                        
+                        
+                            <div class="bg-sandybrown equal">
+                                bg-sandybrown
+                            </div>
+                        
+                        
+                            <div class="bg-goldenrod equal">
+                                bg-goldenrod
+                            </div>
+                        
+                        
+                            <div class="bg-darkgoldenrod equal">
+                                bg-darkgoldenrod
+                            </div>
+                        
+                        
+                            <div class="bg-peru equal">
+                                bg-peru
+                            </div>
+                        
+                        
+                            <div class="bg-chocolate equal">
+                                bg-chocolate
+                            </div>
+                        
+                        
+                            <div class="bg-olive equal">
+                                bg-olive
+                            </div>
+                        
+                        
+                            <div class="bg-saddlebrown equal">
+                                bg-saddlebrown
+                            </div>
+                        
+                        
+                            <div class="bg-sienna equal">
+                                bg-sienna
+                            </div>
+                        
+                        
+                            <div class="bg-brown equal">
+                                bg-brown
+                            </div>
+                       
+                        
+                            <div class="bg-maroon equal">
+                                bg-maroon
+                            </div>
+                                      
+                    </div>
+
+                    <div class="column l3 m6 s12">
+                        
+                        
+                            <div class="bg-lavender equal">
+                                bg-lavender
+                            </div>
+                        
+                        
+                            <div class="bg-thistle equal">
+                                bg-thistle
+                            </div>
+                        
+                        
+                            <div class="bg-violet equal">
+                                bg-violet
+                            </div>
+                        
+                        
+                            <div class="bg-plum equal">
+                                bg-plum
+                            </div>
+                        
+                        
+                            <div class="bg-orchid equal">
+                                bg-orchid
+                            </div>
+                        
+                        
+                            <div class="bg-violet equal">
+                                bg-violet
+                            </div>
+                        
+                        
+                            <div class="bg-magenta equal">
+                                bg-magenta
+                            </div>
+                        
+                        
+                        
+                            <div class="bg-mediumorchid equal">
+                                bg-mediumorchid
+                            </div>
+                        
+                        
+                            <div class="bg-darkorchid equal">
+                                bg-darkorchid
+                            </div>
+                        
+                        
+                            <div class="bg-darkviolet equal">
+                                bg-darkviolet
+                            </div>
+                        
+                        
+                            <div class="bg-blueviolet equal">
+                                bg-blueviolet
+                            </div>
+                        
+                        
+                            <div class="bg-darkmagenta equal">
+                                bg-darkmagenta
+                            </div>
+                        
+                        
+                            <div class="bg-purple equal">
+                                bg-purple
+                            </div>
+                        
+                        
+                            <div class="bg-mediumpurple equal">
+                                bg-mediumpurple
+                            </div>
+                        
+                        
+                            <div class="bg-mediumslateblue equal">
+                                bg-mediumslateblue
+                            </div>
+                        
+                        
+                            <div class="bg-slateblue equal">
+                                bg-slateblue
+                            </div>
+                        
+                        
+                            <div class="bg-darkslateblue equal">
+                                bg-darkslateblue
+                            </div>
+                        
+                        
+                            <div class="bg-rebeccapurple equal">
+                                bg-rebeccapurple
+                            </div>
+                        
+                        
+                            <div class="bg-indigo equal">
+                                bg-indigo
+                            </div>
+                        
+                        
+                        
+                            <div class="bg-cadetblue equal">
+                                bg-cadetblue
+                            </div>
+                        
+                        
+                            <div class="bg-steelblue equal">
+                                bg-steelblue
+                            </div>
+                        
+                        
+                            <div class="bg-lightsteelblue equal">
+                                bg-lightsteelblue
+                            </div>
+                        
+                        
+                            <div class="bg-lightblue equal">
+                                bg-lightblue
+                            </div>
+                        
+                        
+                            <div class="bg-powderblue equal">
+                                bg-powderblue
+                            </div>
+                        
+                        
+                            <div class="bg-lightskyblue equal">
+                                bg-lightskyblue
+                            </div>
+                        
+                        
+                            <div class="bg-skyblue equal">
+                                bg-skyblue
+                            </div>
+                        
+                        
+                            <div class="bg-cornflowerblue equal">
+                                bg-cornflowerblue
+                            </div>
+                        
+                        
+                            <div class="bg-deepskyblue equal">
+                                bg-deepskyblue
+                            </div>
+                        
+                        
+                            <div class="bg-dodgerblue equal">
+                                bg-dodgerblue
+                            </div>
+                        
+                        
+                            <div class="bg-royalblue equal">
+                                bg-royalblue
+                            </div>
+                        
+                        
+                            <div class="bg-blue equal">
+                                bg-blue
+                            </div>
+                        
+                        
+                            <div class="bg-mediumblue equal">
+                                bg-mediumblue
+                            </div>
+                        
+                        
+                            <div class="bg-darkblue equal">
+                                bg-darkblue
+                            </div>
+                        
+                        
+                            <div class="bg-navy equal">
+                                bg-navy
+                            </div>
+                        
+                        
+                            <div class="bg-midnightblue equal">
+                                bg-midnightblue
+                            </div>
+                        
+                    </div>
+                    <div class="column l3 m3 s12">
+                            
+                        
+                            <div class="bg-greenyellow equal">
+                                bg-greenyellow
+                            </div>
+                        
+                        
+                            <div class="bg-chartreuse equal">
+                                bg-chartreuse
+                            </div>
+                        
+                        
+                            <div class="bg-lawngreen equal">
+                                bg-lawngreen
+                            </div>
+                        
+                        
+                            <div class="bg-lime equal">
+                                bg-lime
+                            </div>
+                        
+                        
+                            <div class="bg-limegreen equal">
+                                bg-limegreen
+                            </div>
+                        
+                        
+                            <div class="bg-palegreen equal">
+                                bg-palegreen
+                            </div>
+                        
+                        
+                            <div class="bg-lightgreen equal">
+                                bg-lightgreen
+                            </div>
+                        
+                        
+                            <div class="bg-mediumspringgreen equal">
+                                bg-mediumspringgreen
+                            </div>
+                        
+                        
+                            <div class="bg-springgreen equal">
+                                bg-springgreen
+                            </div>
+                        
+                        
+                            <div class="bg-mediumseagreen equal">
+                                bg-mediumseagreen
+                            </div>
+                        
+                        
+                            <div class="bg-seagreen equal">
+                                bg-seagreen
+                            </div>
+                        
+                        
+                            <div class="bg-forestgreen equal">
+                                bg-forestgreen
+                            </div>
+                        
+                        
+                            <div class="bg-green equal">
+                                bg-green
+                            </div>
+                        
+                        
+                            <div class="bg-darkgreen equal">
+                                bg-darkgreen
+                            </div>
+                        
+                        
+                            <div class="bg-yellowgreen equal">
+                                bg-yellowgreen
+                            </div>
+                        
+                        
+                            <div class="bg-olivedrab equal">
+                                bg-olivedrab
+                            </div>
+                        
+                        
+                            <div class="bg-darkolivegreen equal">
+                                bg-darkolivegreen
+                            </div>
+                        
+                        
+                            <div class="bg-mediumaquamarine equal">
+                                bg-mediumaquamarine
+                            </div>
+                        
+                        
+                            <div class="bg-darkseagreen equal">
+                                bg-darkseagreen
+                            </div>
+                        
+                        
+                            <div class="bg-lightseagreen equal">
+                                bg-lightseagreen
+                            </div>
+                        
+                        
+                            <div class="bg-darkcyan equal">
+                                bg-darkcyan
+                            </div>
+                        
+                        
+                            <div class="bg-teal equal">
+                                bg-teal
+                            </div>
+                        
+                        
+                        
+                            <div class="bg-aqua equal">
+                                bg-aqua
+                            </div>
+                        
+                        
+                            <div class="bg-cyan equal">
+                                bg-cyan
+                            </div>
+                        
+                        
+                            <div class="bg-lightcyan equal">
+                                bg-lightcyan
+                            </div>
+                        
+                        
+                            <div class="bg-paleturquoise equal">
+                                bg-paleturquoise
+                            </div>
+                        
+                        
+                            <div class="bg-aquamarine equal">
+                                bg-aquamarine
+                            </div>
+                        
+                        
+                            <div class="bg-turquoise equal">
+                                bg-turquoise
+                            </div>
+                        
+                        
+                            <div class="bg-mediumturquoise equal">
+                                bg-mediumturquoise
+                            </div>
+                        
+                        
+                            <div class="bg-darkturquoise equal">
+                                bg-darkturquoise
+                            </div>
+                        
+                    </div>
+
+                    <div class="column l3 m3 s12">
+                            
+                        
+                            <div class="bg-gold equal">
+                                bg-gold
+                            </div>
+                        
+                        
+                            <div class="bg-yellow equal">
+                                bg-yellow
+                            </div>
+                        
+                        
+                            <div class="bg-lightyellow equal">
+                                bg-lightyellow
+                            </div>
+                        
+                        
+                            <div class="bg-lemonchiffon equal">
+                                bg-lemonchiffon
+                            </div>
+                        
+                        
+                            <div class="bg-lightgoldenrodyellow equal">
+                                bg-lightgoldenrodyellow
+                            </div>
+                        
+                        
+                            <div class="bg-papayawhip equal">
+                                bg-papayawhip
+                            </div>
+                        
+                        
+                            <div class="bg-moccasin equal">
+                                bg-moccasin
+                            </div>
+                        
+                        
+                            <div class="bg-peachpuff equal">
+                                bg-peachpuff
+                            </div>
+                        
+                        
+                            <div class="bg-palegoldenrod equal">
+                                bg-palegoldenrod
+                            </div>
+                        
+                        
+                            <div class="bg-khaki equal">
+                                bg-khaki
+                            </div>
+                        
+                        
+                            <div class="bg-darkkhaki equal">
+                                bg-darkkhaki
+                            </div>
+                       
+                        
+                            <div class="bg-white equal">
+                                bg-white
+                            </div>
+                        
+                        
+                            <div class="bg-snow equal">
+                                bg-snow
+                            </div>
+                        
+                        
+                            <div class="bg-honeydew equal">
+                                bg-honeydew
+                            </div>
+                        
+                        
+                            <div class="bg-mintcream equal">
+                                bg-mintcream
+                            </div>
+                        
+                        
+                            <div class="bg-azure equal">
+                                bg-azure
+                            </div>
+                        
+                        
+                            <div class="bg-aliceblue equal">
+                                bg-aliceblue
+                            </div>
+                        
+                        
+                            <div class="bg-ghostwhite equal">
+                                bg-ghostwhite
+                            </div>
+                        
+                        
+                            <div class="bg-whitesmoke equal">
+                                bg-whitesmoke
+                            </div>
+                        
+                        
+                            <div class="bg-seashell equal">
+                                bg-seashell
+                            </div>
+                        
+                        
+                            <div class="bg-beige equal">
+                                bg-beige
+                            </div>
+                        
+                        
+                            <div class="bg-oldlace equal">
+                                bg-oldlace
+                            </div>
+                        
+                        
+                            <div class="bg-floralwhite equal">
+                                bg-floralwhite
+                            </div>
+                        
+                        
+                            <div class="bg-ivory equal">
+                                bg-ivory
+                            </div>
+                        
+                        
+                            <div class="bg-antiquewhite equal">
+                                bg-antiquewhite
+                            </div>
+                        
+                        
+                            <div class="bg-linen equal">
+                                bg-linen
+                            </div>
+                        
+                        
+                            <div class="bg-lavenderblush equal">
+                                bg-lavenderblush
+                            </div>
+                        
+                        
+                            <div class="bg-mistyrose equal">
+                                bg-mistyrose
+                            </div>
+                        
+                            <div class="bg-gainsboro equal">
+                                bg-gainsboro
+                            </div>
+
+                        
+                            <div class="bg-lightgray equal">
+                                bg-lightgray
+                            </div>
+
+                        
+                            <div class="bg-silver equal">
+                                bg-silver
+                            </div>
+
+                        
+                            <div class="bg-darkgray equal">
+                                bg-darkgray
+                            </div>
+
+                        
+                            <div class="bg-dimgray equal">
+                                bg-dimgray
+                            </div>
+                        
+                        
+                            <div class="bg-gray equal">
+                                bg-gray
+                            </div>
+                        
+                        
+                            <div class="bg-lightslategray equal">
+                                bg-lightslategray
+                            </div>
+                        
+                        
+                            <div class="bg-slategray equal">
+                                bg-slategray
+                            </div>
+                        
+                        
+                            <div class="bg-darkslategray equal">
+                                bg-darkslategray
+                            </div>
+                        
+                        
+                            <div class="bg-black equal">
+                                bg-black
+                            </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- end  color -->
+
+            <!-- header video -->
+            <div class="deep" id="header">
+
+                <div class="size-22 section">Header Video</div>
+
+                <!-- doc -->
+
+                <!-- header video -->
+                <div class="header-video">
+                    <video class="header-video-setting" autoplay="" loop="" poster="video/poster.jpg">
+                        <source src="video/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="header-video-light">
+                        <div class="position-middle">
+                            <h4>Header Video</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end header video -->
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="header-video">
+    <video class="header-video-setting" autoplay="" loop="" poster="video/poster.jpg">
+        <source src="video/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="header-video-light">
+        <div class="position-middle">
+            <h4>Header Video</h4>
+        </div>
+    </div>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  -->
+
+            <!-- nav -->
+            <div class="deep" id="navbar">
+
+                <div class="size-22 section">Navbar</div>
+
+                <p class="section">Nav Top</p>
+                <!-- doc -->
+
+                <div class="navtop">
+                    <div class="navtop-layout">
+                        <div class="navtop-left">
+                            <ul class="navtop-left-items">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-phone"></i>
+                                        <span> +62 (123) xxxxxxxxx</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-envelope"></i>
+                                        <span> example@email.com</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="navtop-right">
+                            <ul class="navtop-right-items">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-user"></i> 
+                                        <span> Login</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-lock"></i> 
+                                        <span> Register</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="navtop">
+    <div class="navtop-layout">
+        <div class="navtop-left">
+            <ul class="navtop-left-items">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-phone"></i>
+                        <span> +62 (123) xxxxxxxxx</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-envelope"></i>
+                        <span> example@email.com</span>
+                    </a>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navtop-right">
+            <ul class="navtop-right-items">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i> 
+                        <span> Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-lock"></i> 
+                        <span> Register</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            <p class="section">nav</p>
+
+            <!-- doc -->
+
+            <div class="nav">
+                <div class="nav-layout">
+                    <div class="nav-logo">
+                        <a href="#">
+                            <img src="img/icon-core.png" alt="icon-core">
+                        </a>
+                    </div>
+                    <div class="nav-toggle" id="navToggle">
+                        <i class="fa fa-list-ul"></i>
+                    </div>
+                    <div class="nav-items" id="navItems">
+                        <ul class="nav-items-list">
+                            <li><a href="#">link</a></li>
+                            <li data-toggle1>
+                                <a>dropdown
+                                    <i class="fa fa-angle-down arrow-dropdown"></i>
+                                </a>
+                                <ul class="dropdown" data-dropdown1>
+                                    <li><a href="">link 1</a></li>
+                                    <li><a href="">link 2</a></li>
+                                    <li><a href="">link 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="position-megadropdown" data-megatoggle1>
+                                <a>mega dropdown
+                                    <i class="fa fa-angle-down arrow-megadropdown"></i>
+                                </a>
+                                <ul class="mega-dropdown" data-megadropdown1>
+                                    <li class="row grid layout-m">
+                                        <ul class="column grid l3 m6 s12 mega-list">
+                                            <li><a href="#">link 1</a></li>
+                                            <li><a href="#">link 2</a></li>
+                                            <li><a href="#">link 3</a></li>
+                                        </ul>
+                                        <ul class="column grid l3 m6 s12 mega-list">
+                                            <li><a href="#">link 1</a></li>
+                                            <li><a href="#">link 2</a></li>
+                                            <li><a href="#">link 3</a></li>
+                                        </ul>
+                                        <ul class="column grid l3 m6 s12 mega-list">
+                                            <li><a href="#">link 1</a></li>
+                                            <li><a href="#">link 2</a></li>
+                                            <li><a href="#">link 3</a></li>
+                                        </ul>
+                                        <ul class="column grid l3 m6 s12 mega-list">
+                                            <li><a href="#">link 1</a></li>
+                                            <li><a href="#">link 2</a></li>
+                                            <li><a href="#">link 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mega-all-link"><a href="#">All Link</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="nav-search">
+                                    <li class="nav-search-input">
+                                        <form action="#" method="get">
+                                            <input type="text" name="search" placeholder="search">
+                                            <i class="fa fa-search nav-icon-search"></i>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="nav">
+    <div class="nav-layout">
+        <div class="nav-logo">
+            <a href="#">
+                <img src="img/icon-core.png" alt="icon-core">
+            </a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fa fa-list-ul"></i>
+        </div>
+        <div class="nav-items" id="navItems">
+            <ul class="nav-items-list">
+                <li><a href="#">link</a></li>
+                <li data-toggle1>
+                    <a>dropdown
+                        <i class="fa fa-angle-down arrow-dropdown"></i>
+                    </a>
+                    <ul class="dropdown" data-dropdown1>
+                        <li><a href="">link 1</a></li>
+                        <li><a href="">link 2</a></li>
+                        <li><a href="">link 3</a></li>
+                    </ul>
+                </li>
+                <li class="position-megadropdown" data-megatoggle1>
+                    <a>mega dropdown
+                        <i class="fa fa-angle-down arrow-megadropdown"></i>
+                    </a>
+                    <ul class="mega-dropdown" data-megadropdown1>
+                        <li class="row grid layout-m">
+                            <ul class="column grid l3 m6 s12 mega-list">
+                                <li><a href="#">link 1</a></li>
+                                <li><a href="#">link 2</a></li>
+                                <li><a href="#">link 3</a></li>
+                            </ul>
+                            <ul class="column grid l3 m6 s12 mega-list">
+                                <li><a href="#">link 1</a></li>
+                                <li><a href="#">link 2</a></li>
+                                <li><a href="#">link 3</a></li>
+                            </ul>
+                            <ul class="column grid l3 m6 s12 mega-list">
+                                <li><a href="#">link 1</a></li>
+                                <li><a href="#">link 2</a></li>
+                                <li><a href="#">link 3</a></li>
+                            </ul>
+                            <ul class="column grid l3 m6 s12 mega-list">
+                                <li><a href="#">link 1</a></li>
+                                <li><a href="#">link 2</a></li>
+                                <li><a href="#">link 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="mega-all-link"><a href="#">All Link</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="nav-search">
+                        <li class="nav-search-input">
+                            <form action="#" method="get">
+                                <input type="text" name="search" placeholder="search">
+                                <i class="fa fa-search nav-icon-search"></i>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</xmp>
+<!-- end code -->
+            
+            <p>Max dropdown 10 and mega menu max 5</p>
+<xmp>data-toggle1
+    data-dropdown1
+data-toggle2
+    data-dropdown2
+
+    max 10
+
+data-megatoggle1
+    data-megadropdown1
+data-megatoggle2
+    data-megadropdown2
+
+    max 5
+</xmp>
+
+            <p class="section">Nav Sticky</p>
+
+            <a href="doc/doc5/sticky.html" target="_blank">
+                <button>
+                    Demo
+                </button>
+            </a>
+
+            </div>
+            <!-- end  navbar -->
+
+            <!-- aside -->
+            <div class="deep" id="aside">
+
+                <div class="size-22 section">Aside</div>
+
+                <!-- doc -->
+
+                <a href="doc/doc5/side.html" target="_blank">
+                    <button>
+                        Demo
+                    </button>
+                </a>
+
+                <!-- end doc -->
+
+
+            </div>
+            <!-- end aside -->
+
+            <!--  -->
+            <div class="deep" id="section">
+
+                <div class="size-22 section">Section</div>
+
+<!-- code -->
+
+<xmp>.section{
+  margin:16px 0px
+}
+
+.section-t{
+  margin:4px 0px;
+}
+
+.section-s{
+  margin:8px 0px
+}
+
+.section-m{
+  margin:24px 0px
+}
+
+.section-l{
+  margin:32px 0px
+}
+
+.section-g{
+  margin:64px 0px
+}
+
+.secpad{
+  padding:16px 0px
+}
+
+.secpad-t{
+  padding:4px 0px;
+}
+
+.secpad-s{
+  padding:8px 0px
+}
+
+.secpad-m{
+  padding:24px 0px
+}
+
+.secpad-l{
+  padding:32px 0px
+}
+
+.secpad-g{
+  padding:64px 0px
+}
+
+.inside{
+  margin:0 16px;
+}
+.inside-t{
+  margin:0 4px;
+}
+.inside-s{
+  margin:0 8px;
+}
+.inside-m{
+  margin:0 24px;
+}
+.inside-l{
+  margin:0 32px;
+}
+.inside-g{
+  margin:0 64px;
+}
+
+.deep{
+  margin:16px;
+}
+.deep-t{
+  margin:4px;
+}
+.deep-s{
+  margin:8px;
+}
+.deep-m{
+  margin:24px;
+}
+.deep-l{
+  margin:32px;
+}
+.deep-g{
+  margin:64px;
+}
+
+.interior{
+  padding:0 16px;
+}
+.interior-t{
+  padding:0 4px;
+}
+.interior-s{
+  padding:0 8px;
+}
+.interior-m{
+  padding:0 24px;
+}
+.interior-l{
+  padding:0 32px;
+}
+.interior-g{
+  padding:0 64px;
+}
+
+.equal{
+  padding:16px;
+}
+.equal-t{
+  padding:4px;
+}
+.equal-s{
+  padding:8px;
+}
+.equal-m{
+  padding:24px;
+}
+.equal-l{
+  padding:32px;
+}
+.equal-g{
+  padding:64px;
+}
+
+.container {
+  margin:0 24px;
+}
+.container-equal{
+  margin:24px;
+}
+.container-full {
+  margin:0;
+}
+
+@media only screen and (max-width: 600px) {
+  .container{
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container-equal{
+    margin: 0;
+  }
+}
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end section -->
+
+            <!-- content -->
+            <div id="content">
+
+                <div class="size-22 equal">Content</div>
+
+                <!-- doc -->
+
+                <!-- grid -->
+                <div class="section">
+                    <div class="layout-m">
+                        <div class="content-grid">
+                            <!-- content group -->
+                            <div class="content-group">
+                                <div class="row grid-eq">
+                                    <div class="column grid-eq l4 m4 s12">
+                                        <div class="content-items">
+                                            <div class="content-grid-bg content-grid-bg1">
+                                                <div class="content-grid-bg-light">
+                                                    <div class="position-middle">
+                                                        Position Middle
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="center-align">
+                                                <div class="secpad">
+                                                    <div class="secpad-s">
+                                                        <p class="size-13">6<sup>th</sup> April 2017</p>
+                                                        <p class="size-18 secpad-t">Lorem ipsum dolor sit amet</p>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit deserunt omnis culpa sapiente id dolore sed suscipit</p>
+                                                </div>
+                                                <div class="secpad">
+                                                    <button>
+                                                        Read More
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column grid-eq l4 m4 s12">
+                                        <div class="content-items">
+                                            <div class="content-grid-bg content-grid-bg2">
+                                                <div class="content-grid-bg-light">
+                                                    <div class="position-middle">
+                                                        Position Middle
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="center-align">
+                                                <div class="secpad">
+                                                    <div class="secpad-s">
+                                                        <p class="size-13">6<sup>th</sup> April 2017</p>
+                                                        <p class="size-18 secpad-t">Lorem ipsum dolor sit amet</p>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit deserunt omnis culpa sapiente id dolore sed suscipit</p>
+                                                </div>
+                                                <div class="secpad">
+                                                    <button>
+                                                        Read More
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column grid-eq l4 m4 s12">
+                                        <div class="content-items">
+                                            <div class="content-grid-bg content-grid-bg3">
+                                                <div class="content-grid-bg-light">
+                                                    <div class="position-middle">
+                                                        Position Middle
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="center-align">
+                                                <div class="secpad">
+                                                    <div class="secpad-s">
+                                                        <p class="size-13">6<sup>th</sup> April 2017</p>
+                                                        <p class="size-18 secpad-t">Lorem ipsum dolor sit amet</p>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit deserunt omnis culpa sapiente id dolore sed suscipit</p>
+                                                </div>
+                                                <div class="secpad">
+                                                    <button>
+                                                        Read More
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end content group -->
+                        </div>
+                        <!-- end content grid -->
+                    </div>
+                </div>
+                <!-- end grid -->
+
+
+                <!-- end doc -->
+
+<!-- code -->
+<div class="deep">
+<xmp><div class="section">
+    <div class="layout-m">
+        <div class="content-grid">
+            <!-- content group -->
+            <div class="content-group">
+                <div class="row grid-eq">
+                    <div class="column grid-eq l4 m4 s12">
+                        <div class="content-items">
+                            <div class="content-grid-bg content-grid-bg1">
+                                <div class="content-grid-bg-light">
+                                    <div class="position-middle">
+                                        Position Middle
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="center-align">
+                                <div class="secpad">
+                                    <div class="secpad-s">
+                                        <p class="size-13">6<sup>th</sup> April 2017</p>
+                                        <p class="size-18 secpad-t">Lorem ipsum dolor sit amet</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit deserunt omnis culpa sapiente id dolore sed suscipit</p>
+                                </div>
+                                <div class="secpad">
+                                    <button>
+                                        Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column grid-eq l4 m4 s12">
+                        <div class="content-items">
+                            <div class="content-grid-bg content-grid-bg2">
+                                <div class="content-grid-bg-light">
+                                    <div class="position-middle">
+                                        Position Middle
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="center-align">
+                                <div class="secpad">
+                                    <div class="secpad-s">
+                                        <p class="size-13">6<sup>th</sup> April 2017</p>
+                                        <p class="size-18 secpad-t">Lorem ipsum dolor sit amet</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit deserunt omnis culpa sapiente id dolore sed suscipit</p>
+                                </div>
+                                <div class="secpad">
+                                    <button>
+                                        Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column grid-eq l4 m4 s12">
+                        <div class="content-items">
+                            <div class="content-grid-bg content-grid-bg3">
+                                <div class="content-grid-bg-light">
+                                    <div class="position-middle">
+                                        Position Middle
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="center-align">
+                                <div class="secpad">
+                                    <div class="secpad-s">
+                                        <p class="size-13">6<sup>th</sup> April 2017</p>
+                                        <p class="size-18 secpad-t">Lorem ipsum dolor sit amet</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit deserunt omnis culpa sapiente id dolore sed suscipit</p>
+                                </div>
+                                <div class="secpad">
+                                    <button>
+                                        Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end content group -->
+        </div>
+        <!-- end content grid -->
+    </div>
+</div>    
+</xmp>
+
+<div class="section">JS</div>
+
+<xmp>$(window).scroll(function(){
+
+    var scroll = $(this).scrollTop();
+    // content grid parallax landing page
+
+    if(scroll > $(".content-group").offset().top - 400){
+        $(".content-group .content-items").each(function(i){
+            setTimeout(function(){
+                $(".content-group .content-items").eq(i).addClass("content-items-active");
+            }, 250 * i);
+        });
+    }else{
+        $(".content-group .content-items").each(function(i){
+            setTimeout(function(){
+                $(".content-group .content-items").eq(i).removeClass("content-items-active");
+            }, 250 * i);
+        });
+    }
+});
+</xmp>
+</div>
+<!-- end code -->
+
+            </div>
+            <!-- end  content-->
+
+            <!-- footer -->
+            <div class="deep" id="footer">
+
+                <div class="size-22 section">Footer</div>
+
+                <!-- doc -->
+
+                <!-- footer -->
+                <div class="footer">
+                    <div class="footer-parallax footer-bg">
+                        <div class="footer-parallax-light"></div>
+                        <div class="footer-layout">
+                            <div class="footer-search">
+                                <div class="section center-align">
+                                    Newsletter Subscription
+                                </div>
+                                <form action="#" class="relative">
+                                    <input type="text" placeholder="Type Email Here . . . . .">
+                                    <button type="submit" class="footer-search-icon">
+                                        <i class="fa fa-share"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="footer-column">
+                                <div class="row grid">
+                                    <div class="column grid l4 m4 s12">
+                                        <div class="section">
+                                            <h5 class="section">Sosial Media</h5>
+                                            <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima temporibus, reprehenderit doloremque consequatur tempora voluptate expedita natus dolor sunt pariatur possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis cupiditate ipsum commodi error eligendi.
+                                            </p>
+                                            <div class="section">
+                                                <ul class="footer-icon">
+                                                    <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column grid l4 m4 s12">
+                                        <div class="section">
+                                            <h5>Contact</h5>
+                                            <ul class="footer-contact">
+                                                <li><i class="fa fa-map-marker"></i>
+                                                    Street Name & Number, Postcode/Zip
+                                                </li>
+                                                <li><i class="fa fa-phone"></i>
+                                                    +62 (123) xxx xxx
+                                                </li>
+                                                <li><i class="fa fa-envelope"></i>
+                                                    info@email.com
+                                                </li>
+                                                <li><i class="fa fa-skype"></i>
+                                                    Support Skype
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="column grid l4 m4 s12">
+                                        <div class="section">
+                                            <h5 class="section">Blog</h5>
+                                            <p class="subheader">Lorem Ipsum</p>
+                                            <p>Friday, 6<sup>th</sup> April 2017</p>
+                                            <p class="section">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            </p>
+                                            <p class="subheader">Lorem Ipsum</p>
+                                            <p>sunday, 9<sup>th</sup> December 2017</p>
+                                            <p class="section">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <div class="footer-layout">
+                            <div class="footer-copyright-left">
+                                <ul class="footer-copyright-list">
+                                    <li><a href="#">Copyright © 2017 by Andika Chamberlin</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-copyright-right">
+                                <ul class="footer-copyright-list">
+                                    <li><a href="#">Powered by Core 5 Neo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end footer -->
+
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><!-- footer -->
+<div class="footer">
+    <div class="footer-parallax footer-bg">
+        <div class="footer-parallax-light"></div>
+        <div class="footer-layout">
+            <div class="footer-search">
+                <div class="section center-align">
+                    Newsletter Subscription
+                </div>
+                <form action="#" class="relative">
+                    <input type="text" placeholder="Type Email Here . . . . .">
+                    <button type="submit" class="footer-search-icon">
+                        <i class="fa fa-share"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="footer-column">
+                <div class="row grid">
+                    <div class="column grid l4 m4 s12">
+                        <div class="section">
+                            <h5 class="section">Sosial Media</h5>
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima temporibus, reprehenderit doloremque consequatur tempora voluptate expedita natus dolor sunt pariatur possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis cupiditate ipsum commodi error eligendi.
+                            </p>
+                            <div class="section">
+                                <ul class="footer-icon">
+                                    <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column grid l4 m4 s12">
+                        <div class="section">
+                            <h5>Contact</h5>
+                            <ul class="footer-contact">
+                                <li><i class="fa fa-map-marker"></i>
+                                    Street Name & Number, Postcode/Zip
+                                </li>
+                                <li><i class="fa fa-phone"></i>
+                                    +62 (123) xxx xxx
+                                </li>
+                                <li><i class="fa fa-envelope"></i>
+                                    info@email.com
+                                </li>
+                                <li><i class="fa fa-skype"></i>
+                                    Support Skype
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column grid l4 m4 s12">
+                        <div class="section">
+                            <h5 class="section">Blog</h5>
+                            <p class="subheader">Lorem Ipsum</p>
+                            <p>Friday, 6<sup>th</sup> April 2017</p>
+                            <p class="section">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <p class="subheader">Lorem Ipsum</p>
+                            <p>sunday, 9<sup>th</sup> December 2017</p>
+                            <p class="section">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="footer-layout">
+            <div class="footer-copyright-left">
+                <ul class="footer-copyright-list">
+                    <li><a href="#">Copyright © 2017 by Andika Chamberlin</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright-right">
+                <ul class="footer-copyright-list">
+                    <li><a href="#">Powered by Core 5 Neo</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end footer -->
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end footer -->
+
+            <!-- parallax -->
+            <div class="deep" id="parallax">
+
+                <div class="size-22 section">Parallax</div>
+
+                <!-- doc -->
+
+                <div class="parallax parallax-bg">
+                    <div class="parallax-light">
+                        <div class="position-middle">
+                            Parallax
+                        </div>
+                    </div>
+                </div>
+                <!-- end parallax -->
+                
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="parallax parallax-bg">
+    <div class="parallax-light">
+        <div class="position-middle">
+            Parallax
+        </div>
+    </div>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end parallax -->
+
+            <!-- device -->
+            <div class="deep" id="device">
+
+                <div class="size-22 section">Device</div>
+
+                <!-- doc -->
+
+                <a href="doc/doc5/device.html" target="_blank">
+                    <button>Device</button>
+                </a>
+
+                <!-- end doc -->
+
+
+            </div>
+            <!-- end  device-->
+
+            <!--  -->
+            <div class="deep" id="landingelement">
+
+                <div class="size-22 section">Landing Element</div>
+
+                <!-- doc -->
+
+                <div class="relative height-t border-solid overflow-hidden">
+                    <!-- landing element top -->
+                    <div id="landingElementTop">
+                        <div class="element-top">
+                            <div class="deep center-align">
+                                Element Top
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end landing element top -->
+
+                    <!-- landing element right -->
+                    <div id="landingElementRight">
+                        <div class="element-right">
+                            <div class="deep left-align">
+                                Element Right
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end landing element right -->
+
+                    <!-- landing element left -->
+                    <div id="landingElementLeft">   
+                        <div class="element-left">
+                            <div class="deep right-align">
+                                Element Left
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end landing element left -->
+
+                    <!-- landing element bottom -->
+                    <div id="landingElementBottom">
+                        <div class="element-bottom">
+                            <div class="deep center-align">
+                                Element Bottom
+                            </div>
+                        </div>    
+                    </div>
+                    <!-- end landing element bottom -->
+
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="relative height-t border-solid overflow-hidden">
+    <!-- landing element top -->
+    <div id="landingElementTop">
+        <div class="element-top">
+            <div class="deep center-align">
+                Element Top
+            </div>
+        </div>
+    </div>
+    <!-- end landing element top -->
+
+    <!-- landing element right -->
+    <div id="landingElementRight">
+        <div class="element-right">
+            <div class="deep left-align">
+                Element Right
+            </div>
+        </div>
+    </div>
+    <!-- end landing element right -->
+
+    <!-- landing element left -->
+    <div id="landingElementLeft">   
+        <div class="element-left">
+            <div class="deep right-align">
+                Element Left
+            </div>
+        </div>
+    </div>
+    <!-- end landing element left -->
+
+    <!-- landing element bottom -->
+    <div id="landingElementBottom">
+        <div class="element-bottom">
+            <div class="deep center-align">
+                Element Bottom
+            </div>
+        </div>    
+    </div>
+    <!-- end landing element bottom -->
+
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end landing element -->
+
+            <!-- load animation -->
+            <div class="deep" id="loadanimation">
+
+                <div class="size-22 section">Load Animation</div>
+
+                <!-- doc -->
+
+                <a href="doc/doc5/loadanimation.html" target="_blank">
+                    <button>Demo</button>
+                </a>
+
+                <!-- end doc -->
+
+
+            </div>
+            <!-- end animation -->
+
+            <!-- totop -->
+            <div id="toTopActive"></div>
+            
+            <div class="deep" id="scrolltop">
+
+                <div class="size-22 section">To Top</div>
+
+                <!-- doc -->
+
+                <!-- to top -->
+                <div class="totop">
+                    <a href="#toTop" id="toTopToggle">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+                <!-- end to top -->
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><html id="toTop">
+
+<div id="toTopActive"></div>
+
+<div class="totop">
+    <a href="#toTop" id="toTopToggle">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end totop -->
+
+            <!-- load page -->
+            <div class="deep" id="loadpage">
+
+                <div class="size-22 section">Load Page</div>
+
+                <!-- doc -->
+
+                <a href="doc/doc5/loadpage.html" target="_blank">
+                    <button>Demo</button>
+                </a>
+
+                <!-- end doc -->
+
+            </div>
+            <!-- end  load page-->
+
+            <!-- ticket -->
+            <div class="deep" id="ticket">
+
+                <div class="size-22 section">Ticket</div>
+
+                <!-- doc -->
+
+                <div class="ticket">
+                    <!-- ticket items -->
+                    <div class="ticket-items">
+                        <div class="ticket-list">
+                            <div class="ticket-calendar">
+                                January
+                            </div>
+                            <div class="ticket-status">
+                                <div class="ticket-badge-sold">
+                                    Sold Out
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket-list">
+                            <div class="ticket-calendar">
+                                April
+                            </div>
+                            <div class="ticket-status">
+                                <div class="ticket-badge-sold">
+                                    Sold Out
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket-list">
+                            <div class="ticket-calendar">
+                                Agust
+                            </div>
+                            <div class="ticket-status">
+                                <div class="ticket-badge">
+                                    9
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end ticket items -->
+                    </div>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="ticket">
+    <!-- ticket items -->
+    <div class="ticket-items">
+        <div class="ticket-list">
+            <div class="ticket-calendar">
+                January
+            </div>
+            <div class="ticket-status">
+                <div class="ticket-badge-sold">
+                    Sold Out
+                </div>
+            </div>
+        </div>
+        <div class="ticket-list">
+            <div class="ticket-calendar">
+                April
+            </div>
+            <div class="ticket-status">
+                <div class="ticket-badge-sold">
+                    Sold Out
+                </div>
+            </div>
+        </div>
+        <div class="ticket-list">
+            <div class="ticket-calendar">
+                Agust
+            </div>
+            <div class="ticket-status">
+                <div class="ticket-badge">
+                    9
+                </div>
+            </div>
+        </div>
+        <!-- end ticket items -->
+    </div>
+</div>
+</xmp>
+
+<!-- end code -->
+                
+
+
+
+            </div>
+            <!-- end ticket -->
+
+
+            <p class="equal">Ticket Card</p>    
+
+            <!-- ticket card -->
+            <div class="ticket-card">
+                <div class="row grid-eq">
+                    <div class="column grid-eq l4 m12 s12">
+                        <div class="ticket-card-bg ticket-bg1">
+                            <div class="ticket-card-light">
+
+                            </div>
+                        </div>
+                        <div class="ticket-card-desc">
+                            <p class="subheader section-s">Jakarta</p>
+                            <p class="gray">Fri 3 Nov 2017</p>
+                            <p class="section">
+                            Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                            </p>
+                            <button>
+                                Buy Ticket
+                            </button>
+                        </div>
+                    </div>
+                    <div class="column grid-eq l4 m12 s12">
+                        <div class="ticket-card-bg ticket-bg2">
+                            <div class="ticket-card-light">
+
+                            </div>
+                        </div>
+                        <div class="ticket-card-desc">
+                            <p class="subheader section-s">Tokyo</p>
+                            <p class="gray">Sun 22 Apr 2017</p>
+                            <p class="section">
+                            Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                            </p>
+                            <button>
+                                Buy Ticket
+                            </button>
+                        </div>
+                    </div>
+                    <div class="column grid-eq l4 m12 s12">
+                        <div class="ticket-card-bg ticket-bg3">
+                            <div class="ticket-card-light">
+
+                            </div>
+                        </div>
+                        <div class="ticket-card-desc">
+                            <p class="subheader section-s">London</p>
+                            <p class="gray">Thu 21 Agust 2017</p>
+                            <p class="section">
+                            Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                            </p>
+                            <button>
+                                Buy Ticket
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end ticket card -->
+
+   
+<div class="deep">
+<xmp><!-- ticket card -->
+<div class="ticket-card">
+    <div class="row grid-eq">
+        <div class="column grid-eq l4 m12 s12">
+            <div class="ticket-card-bg ticket-bg1">
+                <div class="ticket-card-light">
+
+                </div>
+            </div>
+            <div class="ticket-card-desc">
+                <p class="subheader section-s">Jakarta</p>
+                <p class="gray">Fri 3 Nov 2017</p>
+                <p class="section">
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                </p>
+                <button>
+                    Buy Ticket
+                </button>
+            </div>
+        </div>
+        <div class="column grid-eq l4 m12 s12">
+            <div class="ticket-card-bg ticket-bg2">
+                <div class="ticket-card-light">
+
+                </div>
+            </div>
+            <div class="ticket-card-desc">
+                <p class="subheader section-s">Tokyo</p>
+                <p class="gray">Sun 22 Apr 2017</p>
+                <p class="section">
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                </p>
+                <button>
+                    Buy Ticket
+                </button>
+            </div>
+        </div>
+        <div class="column grid-eq l4 m12 s12">
+            <div class="ticket-card-bg ticket-bg3">
+                <div class="ticket-card-light">
+
+                </div>
+            </div>
+            <div class="ticket-card-desc">
+                <p class="subheader section-s">London</p>
+                <p class="gray">Thu 21 Agust 2017</p>
+                <p class="section">
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                </p>
+                <button>
+                    Buy Ticket
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end ticket card -->
+</xmp>
+</div>
+
+
+            <!-- contact -->
+            <div class="deep" id="contact">
+
+                <div class="size-22 section">Contact</div>
+
+                <!-- doc -->
+
+                <div class="contact contact-bg">
+                    <div class="contact-light"></div>
+                    <div class="contact-layout">
+                        <div class="contact-group">
+                            <div class="row grid-eq">
+                                <div class="column grid-eq l6 m6 s12">
+                                    <ul class="contact-list">
+                                        <li>Perbaungan, ID</li>
+                                        <li>Phone: +00 151515</li>
+                                        <li>Email: mail@mail.com</li>
+                                    </ul>
+                                </div>
+                                <div class="column grid-eq l6 m6 s12">
+                                    <form action="#" class="contact-form">
+                                        <div class="row grid-eq">
+                                            <div class="column grid-eq l6 m6 s12">
+                                                <input type="text" placeholder="Name">
+                                            </div>
+                                            <div class="column grid-eq l6 m6 s12">
+                                                <input type="text" placeholder="Email">
+                                            </div>
+                                            <div class="column grid-eq s12">
+                                                <input type="text" placeholder="Message">
+                                            </div>
+                                        </div>
+                                        <div class="row grid-eq">
+                                            <div class="column grid-eq">
+                                                <div class="right-align">
+                                                    <button>Send</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="contact contact-bg">
+    <div class="contact-light"></div>
+    <div class="contact-layout">
+        <div class="contact-group">
+            <div class="row grid-eq">
+                <div class="column grid-eq l6 m6 s12">
+                    <ul class="contact-list">
+                        <li>Perbaungan, ID</li>
+                        <li>Phone: +00 151515</li>
+                        <li>Email: mail@mail.com</li>
+                    </ul>
+                </div>
+                <div class="column grid-eq l6 m6 s12">
+                    <form action="#" class="contact-form">
+                        <div class="row grid-eq">
+                            <div class="column grid-eq l6 m6 s12">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="column grid-eq l6 m6 s12">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="column grid-eq s12">
+                                <input type="text" placeholder="Message">
+                            </div>
+                        </div>
+                        <div class="row grid-eq">
+                            <div class="column grid-eq">
+                                <div class="right-align">
+                                    <button>Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  contact -->
+
+            <!-- coming soon -->
+            <div class="deep" id="comingsoon">
+
+                <div class="size-22 section">Coming Soon</div>
+
+                    <a href="doc/doc5/comingsoon.html" target="_blank">
+                        <button>Demo</button>
+                    </a>
+<!-- code -->
+
+<xmp><div class="coming-soon">
+    <video class="coming-soon-setting" autoplay="" loop="" poster="video/poster.jpg">
+        <source src="video/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="coming-soon-light"></div>
+    
+    <div class="coming-soon-header">
+        Coming Soon
+    </div>
+
+    <div class="coming-soon-logo">
+        <a href="#">
+            <img src="img/icon-core.png" alt="core">
+        </a>
+    </div>
+
+    <div class="coming-soon-icon">
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+    </div>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end comingsoon -->
+
+            <!-- badge -->
+            <div class="deep" id="badge">
+
+                <div class="size-22 section">Badge</div>
+
+                <!-- doc -->
+
+                <div class="deep">
+                    <div class="badge">
+                        9
+                    </div>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="deep">
+    <div class="badge">
+        9
+    </div>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  badge -->
+
+            <!-- post -->
+            <div class="deep" id="post">
+
+                <div class="size-22 section"></div>
+
+                <!-- doc -->
+
+                <!-- post -->
+                <div class="post">
+                    <div class="post-title">
+                        Populer Post
+                    </div>
+                    <div class="post-group">
+                        <div class="post-image">
+                            <a href="#">
+                                <img src="img/placeholder.png" alt="placeholder">
+                            </a>
+                        </div>
+                        <div class="post-desc">
+                            <p class="post-desc-title">
+                                <a href="#">Lorem</a>
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, veniam laborum repellat sequi</p>
+                        </div>
+                    </div>
+                    <div class="post-group">
+                        <div class="post-image">
+                            <a href="#">
+                                <img src="img/placeholder.png" alt="placeholder">
+                            </a>
+                        </div>
+                        <div class="post-desc">
+                            <p class="post-desc-title">
+                                <a href="#">Lorem</a>
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, veniam laborum repellat sequi</p>
+                        </div>
+                    </div>
+                    <div class="post-group">
+                        <div class="post-image">
+                            <a href="#">
+                                <img src="img/placeholder.png" alt="placeholder">
+                            </a>
+                        </div>
+                        <div class="post-desc">
+                            <p class="post-desc-title">
+                                <a href="#">Lorem</a>
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, veniam laborum repellat sequi</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end post -->
+
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><!-- post -->
+<div class="post">
+    <div class="post-title">
+        Populer Post
+    </div>
+    <div class="post-group">
+        <div class="post-image">
+            <a href="#">
+                <img src="img/placeholder.png" alt="placeholder">
+            </a>
+        </div>
+        <div class="post-desc">
+            <p class="post-desc-title">
+                <a href="#">Lorem</a>
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, veniam laborum repellat sequi</p>
+        </div>
+    </div>
+    <div class="post-group">
+        <div class="post-image">
+            <a href="#">
+                <img src="img/placeholder.png" alt="placeholder">
+            </a>
+        </div>
+        <div class="post-desc">
+            <p class="post-desc-title">
+                <a href="#">Lorem</a>
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, veniam laborum repellat sequi</p>
+        </div>
+    </div>
+    <div class="post-group">
+        <div class="post-image">
+            <a href="#">
+                <img src="img/placeholder.png" alt="placeholder">
+            </a>
+        </div>
+        <div class="post-desc">
+            <p class="post-desc-title">
+                <a href="#">Lorem</a>
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, veniam laborum repellat sequi</p>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  post -->
+
+            <!-- tag -->
+            <div class="deep" id="tag">
+
+                <div class="size-22 section">Tag</div>
+
+                <!-- doc -->
+
+                <div class="tag">
+                    <div class="tag-title">
+                        Tag
+                    </div>
+                    <ul class="tag-items">
+                        <li><span class="tag-items-active">Navoon</span></li>
+                        <li><span>Pop Green</span></li>
+                        <li><span>Magnum</span></li>
+                        <li><span>Neo</span></li>
+                        <li><span>Browser</span></li>
+                        <li><span>jQuery</span></li>
+                        <li><span>Gulp.js</span></li>
+                        <li><span>Core.css</span></li>
+                        <li><span>Core.js</span></li>
+                        <li><span>Font Awesome</span></li>
+                        <li><span>Modernizr</span></li>     
+                    </ul>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="tag">
+    <div class="tag-title">
+        Tag
+    </div>
+    <ul class="tag-items">
+        <li><span class="tag-items-active">Navoon</span></li>
+        <li><span>Pop Green</span></li>
+        <li><span>Magnum</span></li>
+        <li><span>Neo</span></li>
+        <li><span>Browser</span></li>
+        <li><span>jQuery</span></li>
+        <li><span>Gulp.js</span></li>
+        <li><span>Core.css</span></li>
+        <li><span>Core.js</span></li>
+        <li><span>Font Awesome</span></li>
+        <li><span>Modernizr</span></li>     
+    </ul>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end tag -->
+
+            <!-- pagination -->
+            <div class="deep" id="pagination">
+
+                <div class="size-22 section">Pagination</div>
+
+                <!-- doc -->
+
+                <div class="section">
+                    <ul class="pagination">
+                        <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><ul class="pagination">
+    <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">8</a></li>
+    <li><a href="#">9</a></li>
+    <li><a href="#">10</a></li>
+    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+</ul>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end pagination -->
+
+            <!-- namecard -->
+            <div class="deep" id="namecard">
+
+                <div class="size-22 section">Name Card</div>
+
+                <!-- doc -->
+
+                <!-- name card -->
+                <div class="name-card">
+                    <div class="name-card-header name-card-bg">
+                        <div class="name-card-light">
+                            <div class="position-middle">
+                                <p class="quote">
+                                    <i class="fa fa-quote-left"></i>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi eius, tempora in
+                                    <span class="right-align section quote">Andika Chamberlin</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name-card-desc">
+                        <p class="section-s size-18">Andika Chamberlin</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quae dolorum error, earum quas delectus neque dolor mollitia quos dignissimos sint animi voluptas natus blanditiis excepturi repellendus sapiente totam consequatur!
+                        </p>
+                    </div>
+                </div>
+                <!-- end name card -->
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><!-- name card -->
+<div class="name-card">
+    <div class="name-card-header name-card-bg">
+        <div class="name-card-light">
+            <div class="position-middle">
+                <p class="quote">
+                    <i class="fa fa-quote-left"></i>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi eius, tempora in
+                    <span class="right-align section quote">Andika Chamberlin</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="name-card-desc">
+        <p class="section-s size-18">Andika Chamberlin</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quae dolorum error, earum quas delectus neque dolor mollitia quos dignissimos sint animi voluptas natus blanditiis excepturi repellendus sapiente totam consequatur!
+        </p>
+    </div>
+</div>
+<!-- end name card -->
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end name card -->
+
+            <!-- subscribe -->
+            <div class="deep" id="subscribe">
+
+                <div class="size-22 section">Subscribe</div>
+
+                <!-- doc -->
+
+                <div class="subscribe">
+                    <div class="subscribe-title">
+                        Subscribe
+                    </div>
+                    <form action="#" class="subscribe-form">
+                        <label>
+                            Enter your e-mail below and get notified on the latest blog posts.
+                        </label>
+                        <input type="text" placeholder="enter e-mail">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="subscribe">
+    <div class="subscribe-title">
+        Subscribe
+    </div>
+    <form action="#" class="subscribe-form">
+        <label>
+            Enter your e-mail below and get notified on the latest blog posts.
+        </label>
+        <input type="text" placeholder="enter e-mail">
+        <button>Subscribe</button>
+    </form>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end subcribe -->
+
+            <!-- skills -->
+            <div class="deep" id="skills">
+
+                <div class="size-22 section">Skills</div>
+
+                <!-- doc -->
+
+                <div class="skills">
+                    <div class="skills-title">Skills</div>
+                    <ul class="skills-list">
+                        <li>HTML</li>
+                        <li class="skills-bar">
+                            <span class="skills-80">80%</span>
+                        </li>
+                        <li>CSS</li>
+                        <li class="skills-bar">
+                            <span class="skills-90">90%</span>
+                        </li>
+                        <li>Javascript</li>
+                        <li class="skills-bar">
+                            <span class="skills-50">50%</span>
+                        </li>
+                        <li>SQL</li>
+                        <li class="skills-bar">
+                            <span class="skills-40">40%</span>
+                        </li>
+                        <li>PHP</li>
+                        <li class="skills-bar">
+                            <span class="skills-40">40%</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="skills">
+    <div class="skills-title">Skills</div>
+    <ul class="skills-list">
+        <li>HTML</li>
+        <li class="skills-bar">
+            <span class="skills-80">80%</span>
+        </li>
+        <li>CSS</li>
+        <li class="skills-bar">
+            <span class="skills-90">90%</span>
+        </li>
+        <li>Javascript</li>
+        <li class="skills-bar">
+            <span class="skills-50">50%</span>
+        </li>
+        <li>SQL</li>
+        <li class="skills-bar">
+            <span class="skills-40">40%</span>
+        </li>
+        <li>PHP</li>
+        <li class="skills-bar">
+            <span class="skills-40">40%</span>
+        </li>
+    </ul>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end skills -->
+
+            <!-- filter jquery -->
+            <div class="deep" id="filterjquery">
+
+                <div class="size-22 section">Filter jQuery</div>
+
+                <!-- doc -->
+
+                <div class="filter">
+                    <ul class="filter-list">
+                        <li class="filter-btn filter-active" data-filter="all">All</li>
+                        <li class="filter-btn" data-filter="fil1">Navoon</li>
+                        <li class="filter-btn" data-filter="fil2">Popgreen</li>
+                        <li class="filter-btn" data-filter="fil3">Magnum</li>
+                        <li class="filter-btn" data-filter="fil4">Neo</li>
+                        <li class="filter-btn" data-filter="fil5">Impact</li>
+                    </ul>
+                    <div class="filter-box-container">
+                        <div class="filter-box filter-items fil1 bg-teal">Navoon</div>
+                        <div class="filter-box filter-items fil2 bg-seagreen">Popgreen</div>
+                        <div class="filter-box filter-items fil3 bg-gold">Magnum</div>
+                        <div class="filter-box filter-items fil4 bg-darkslategray">Neo</div>
+                        <div class="filter-box filter-items fil5 bg-crimson">Impact</div>
+                        <div class="filter-box filter-items fil1 bg-teal">Navoon</div>
+                        <div class="filter-box filter-items fil2 bg-seagreen">Popgreen</div>
+                        <div class="filter-box filter-items fil3 bg-gold">Magnum</div>
+                        <div class="filter-box filter-items fil4 bg-darkslategray">Neo</div>
+                        <div class="filter-box filter-items fil5 bg-crimson">Impact</div>
+                    </div>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="filter">
+    <ul class="filter-list">
+        <li class="filter-btn filter-active" data-filter="all">All</li>
+        <li class="filter-btn" data-filter="fil1">Navoon</li>
+        <li class="filter-btn" data-filter="fil2">Popgreen</li>
+        <li class="filter-btn" data-filter="fil3">Magnum</li>
+        <li class="filter-btn" data-filter="fil4">Neo</li>
+        <li class="filter-btn" data-filter="fil5">Impact</li>
+    </ul>
+    <div class="filter-box-container">
+        <div class="filter-box filter-items fil1 bg-teal">Navoon</div>
+        <div class="filter-box filter-items fil2 bg-seagreen">Popgreen</div>
+        <div class="filter-box filter-items fil3 bg-gold">Magnum</div>
+        <div class="filter-box filter-items fil4 bg-darkslategray">Neo</div>
+        <div class="filter-box filter-items fil5 bg-crimson">Impact</div>
+        <div class="filter-box filter-items fil1 bg-teal">Navoon</div>
+        <div class="filter-box filter-items fil2 bg-seagreen">Popgreen</div>
+        <div class="filter-box filter-items fil3 bg-gold">Magnum</div>
+        <div class="filter-box filter-items fil4 bg-darkslategray">Neo</div>
+        <div class="filter-box filter-items fil5 bg-crimson">Impact</div>
+    </div>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end filter -->
+
+            <!-- skills card -->
+            <div class="deep" id="skillscard">
+
+                <div class="size-22 section">Skills Card</div>
+
+                <!-- doc -->
+
+                <div class="skills-card">
+                    <div class="row grid-eq">
+                        <div class="column grid-eq l4 m4 s12">
+                            <ul class="skills-card-items">
+                                <li class="skills-card-title">Basic</li>
+                                <li>Back End</li>
+                                <li>Front End</li>
+                                <li>Mail Support</li>
+                                <li class="skills-card-price">
+                                    <span>$10</span>
+                                    <span>Per Mount</span>
+                                </li>
+                                <li class="skills-card-btn">
+                                    <button>Sign Up</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column grid-eq l4 m4 s12">
+                            <ul class="skills-card-items">
+                                <li class="skills-card-title">Pro</li>
+                                <li>Back End</li>
+                                <li>Front End</li>
+                                <li>Mail Support</li>
+                                <li class="skills-card-price">
+                                    <span>$25</span>
+                                    <span>Per Mount</span>
+                                </li>
+                                <li class="skills-card-btn">
+                                    <button>Sign Up</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column grid-eq l4 m4 s12">
+                            <ul class="skills-card-items">
+                                <li class="skills-card-title">Premium</li>
+                                <li>Back End</li>
+                                <li>Front End</li>
+                                <li>Mail Support</li>
+                                <li class="skills-card-price">
+                                    <span>$50</span>
+                                    <span>Per Mount</span>
+                                </li>
+                                <li class="skills-card-btn">
+                                    <button>Sign Up</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="skills-card">
+    <div class="row grid-eq">
+        <div class="column grid-eq l4 m4 s12">
+            <ul class="skills-card-items">
+                <li class="skills-card-title">Basic</li>
+                <li>Back End</li>
+                <li>Front End</li>
+                <li>Mail Support</li>
+                <li class="skills-card-price">
+                    <span>$10</span>
+                    <span>Per Mount</span>
+                </li>
+                <li class="skills-card-btn">
+                    <button>Sign Up</button>
+                </li>
+            </ul>
+        </div>
+        <div class="column grid-eq l4 m4 s12">
+            <ul class="skills-card-items">
+                <li class="skills-card-title">Pro</li>
+                <li>Back End</li>
+                <li>Front End</li>
+                <li>Mail Support</li>
+                <li class="skills-card-price">
+                    <span>$25</span>
+                    <span>Per Mount</span>
+                </li>
+                <li class="skills-card-btn">
+                    <button>Sign Up</button>
+                </li>
+            </ul>
+        </div>
+        <div class="column grid-eq l4 m4 s12">
+            <ul class="skills-card-items">
+                <li class="skills-card-title">Premium</li>
+                <li>Back End</li>
+                <li>Front End</li>
+                <li>Mail Support</li>
+                <li class="skills-card-price">
+                    <span>$50</span>
+                    <span>Per Mount</span>
+                </li>
+                <li class="skills-card-btn">
+                    <button>Sign Up</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end card -->
+
+            <!-- alert -->
+            <div class="deep" id="alert">
+
+                <div class="size-22 section">Alert</div>
+
+                <!-- doc -->
+
+                <div class="alert-success">
+                    Success
+                </div>
+                <br>
+                <div class="alert-info">
+                    info
+                </div>
+                <br>
+                <div class="alert-warning">
+                    warning
+                </div>
+                <br>
+                <div class="alert-danger">
+                    danger
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="alert-success">
+    Success
+</div>
+<br>
+<div class="alert-info">
+    info
+</div>
+<br>
+<div class="alert-warning">
+    warning
+</div>
+<br>
+<div class="alert-danger">
+    danger
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end alert -->
+
+            <!-- modal -->
+            <div class="deep" id="modal">
+
+                <div class="size-22 section">Modal</div>
+
+                <!-- doc -->
+
+                <a href="doc/doc5/modal.html" target="_blank">
+                    <button>Demo</button>
+                </a>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="modal-toggle">
+    <i class="fa fa-list-ul"></i>
+</div>
+
+<div class="modal-window"></div>
+
+<div class="modal">
+    <div class="position-topleft">
+        <div class="modal-close">
+            <i class="fa fa-remove"></i>
+        </div>
+    </div>
+    <div class="position-middle">
+        Modal overflow-y auto
+    </div>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  -->
+
+            <!-- tooltip -->
+            <div class="deep" id="tooltip">
+
+                <div class="size-22 section">Tooltip</div>
+
+                <!-- doc -->
+
+                <span class="tooltip">Top
+                    <span class="tooltip-top">Tooltip text</span>
+                </span>
+                <span class="tooltip">Bottom
+                    <span class="tooltip-bottom">Tooltip text</span>
+                </span>
+                <span class="tooltip">Left
+                    <span class="tooltip-left">Tooltip text</span>
+                </span>
+                <span class="tooltip">Right
+                    <span class="tooltip-right">Tooltip text</span>
+                </span>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><span class="tooltip">Top
+    <span class="tooltip-top">Tooltip text</span>
+</span>
+<span class="tooltip">Bottom
+    <span class="tooltip-bottom">Tooltip text</span>
+</span>
+<span class="tooltip">Left
+    <span class="tooltip-left">Tooltip text</span>
+</span>
+<span class="tooltip">Right
+    <span class="tooltip-right">Tooltip text</span>
+</span>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  -->
+
+            <!--  -->
+            <div class="deep" id="popup">
+
+                <div class="size-22 section">Popup</div>
+
+                <!-- doc -->
+
+                <span class="popup" id="popupTop">Top
+                    <span class="popup-top">Tooltip text</span>
+                </span>
+                <span class="popup" id="popupBottom">Bottom
+                    <span class="popup-bottom">Tooltip text</span>
+                </span>
+                <span class="popup" id="popupLeft">Left
+                    <span class="popup-left">Tooltip text</span>
+                </span>
+                <span class="popup" id="popupRight">Right
+                    <span class="popup-right">Tooltip text</span>
+                </span>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><span class="popup" id="popupTop">Top
+    <span class="popup-top">Tooltip text</span>
+</span>
+<span class="popup" id="popupBottom">Bottom
+    <span class="popup-bottom">Tooltip text</span>
+</span>
+<span class="popup" id="popupLeft">Left
+    <span class="popup-left">Tooltip text</span>
+</span>
+<span class="popup" id="popupRight">Right
+    <span class="popup-right">Tooltip text</span>
+</span>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  -->
+
+            <div class="deep" id="button">
+                <div class="size-22 section">Button</div>
+                <span class="btn">Button</span>
+
+<xmp><span class="btn">Button</span>
+</xmp>                
+            </div>
+
+            <!--  -->
+            <div class="deep" id="testimonial">
+
+                <div class="size-22 section">Testimonial</div>
+
+                <!-- doc -->
+
+                <div class="testimonial">
+                    <div class="testimonial-image">
+                        <a href="#">
+                            <img src="img/placeholder.png" alt="testimonial">
+                        </a>
+                    </div>
+                    <div class="testimonial-desc">
+                        <span class="testimonial-title">
+                            <a href="#">Andika Chamberlin</a>
+                        </span>
+                        <span class="testimonial-work">
+                            Front End Developer
+                        </span>
+                        <span class="testimonial-comment">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </span>
+                    </div>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="testimonial">
+    <div class="testimonial-image">
+        <a href="#">
+            <img src="img/placeholder.png" alt="testimonial">
+        </a>
+    </div>
+    <div class="testimonial-desc">
+        <span class="testimonial-title">
+            <a href="#">Andika Chamberlin</a>
+        </span>
+        <span class="testimonial-work">
+            Front End Developer
+        </span>
+        <span class="testimonial-comment">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </span>
+    </div>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  -->
+
+            <!--  -->
+            <div class="deep" id="accordion">
+
+                <div class="size-22 section">Accordion</div>
+
+                <!-- doc -->
+
+                <div class="acc">
+                    <ul  class="acc-list">
+                        <li class="acc-toggle">
+                            <a>acc 1<i class="fa fa-angle-down acc-arrow"></i></a>
+                            <ul class="acc-dropdown acc-sub">
+                                <li><a href="#!">link</a></li> 
+                                <li class="acc-toggle">
+                                    <a>acc sub 2
+                                        <i class="fa fa-angle-down acc-arrow"></i>
+                                    </a>
+                                    <ul class="acc-dropdown acc-sub">
+                                        <li><a href="#!">link</a></li>
+                                        <li class="acc-toggle">
+                                            <a>acc sub 2.2
+                                                <i class="fa fa-angle-down acc-arrow"></i>
+                                            </a>
+                                            <ul class="acc-dropdown acc-sub">
+                                                <li><a href="#!">link</a></li>
+                                                <li class="acc-toggle">
+                                                    <a>acc sub 2.2.2
+                                                        <i class="fa fa-angle-down acc-arrow"></i>
+                                                    </a>
+                                                    <ul class="acc-dropdown acc-sub">
+                                                        <li><a href="#!">link</a></li>
+                                                        <li><a href="#!">link</a></li>
+                                                        <li><a href="#!">link</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#!">link</a></li>
+                                                <li><a href="#!">link</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#!">link</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#!">link</a></li>
+                            </ul>
+                        </li>
+                        <li class="acc-toggle">
+                            <a>acc 2<i class="fa fa-angle-down acc-arrow"></i></a>
+                            <ul class="acc-dropdown acc-sub">
+                                <li><a href="#!">link</a></li>
+                                <li><a href="#!">link</a></li>
+                                <li><a href="#!">link</a></li>
+                            </ul>
+                        </li>
+                        <li class="acc-toggle">
+                            <a>acc 3<i class="fa fa-angle-down acc-arrow"></i></a>
+                            <ul class="acc-dropdown acc-sub">
+                                <li><a href="#!">link</a></li>
+                                <li><a href="#!">link</a></li>
+                                <li><a href="#!">link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="acc">
+    <ul  class="acc-list">
+        <li class="acc-toggle">
+            <a>acc 1<i class="fa fa-angle-down acc-arrow"></i></a>
+            <ul class="acc-dropdown acc-sub">
+                <li><a href="#!">link</a></li> 
+                <li class="acc-toggle">
+                    <a>acc sub 2
+                        <i class="fa fa-angle-down acc-arrow"></i>
+                    </a>
+                    <ul class="acc-dropdown acc-sub">
+                        <li><a href="#!">link</a></li>
+                        <li class="acc-toggle">
+                            <a>acc sub 2.2
+                                <i class="fa fa-angle-down acc-arrow"></i>
+                            </a>
+                            <ul class="acc-dropdown acc-sub">
+                                <li><a href="#!">link</a></li>
+                                <li class="acc-toggle">
+                                    <a>acc sub 2.2.2
+                                        <i class="fa fa-angle-down acc-arrow"></i>
+                                    </a>
+                                    <ul class="acc-dropdown acc-sub">
+                                        <li><a href="#!">link</a></li>
+                                        <li><a href="#!">link</a></li>
+                                        <li><a href="#!">link</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#!">link</a></li>
+                                <li><a href="#!">link</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!">link</a></li>
+                    </ul>
+                </li>
+                <li><a href="#!">link</a></li>
+            </ul>
+        </li>
+        <li class="acc-toggle">
+            <a>acc 2<i class="fa fa-angle-down acc-arrow"></i></a>
+            <ul class="acc-dropdown acc-sub">
+                <li><a href="#!">link</a></li>
+                <li><a href="#!">link</a></li>
+                <li><a href="#!">link</a></li>
+            </ul>
+        </li>
+        <li class="acc-toggle">
+            <a>acc 3<i class="fa fa-angle-down acc-arrow"></i></a>
+            <ul class="acc-dropdown acc-sub">
+                <li><a href="#!">link</a></li>
+                <li><a href="#!">link</a></li>
+                <li><a href="#!">link</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  -->
+
+            <!--  -->
+            <div class="deep" id="filter">
+
+                <div class="size-22 section">Filter Tab</div>
+
+                <!-- doc -->
+
+                <div class="tab">
+                    <ul class="tab-list">
+                        <li class="tab-btn tab-active" data-tab="tab1">Tab 1</li>
+                        <li class="tab-btn" data-tab="tab2">Tab 2</li>
+                        <li class="tab-btn" data-tab="tab3">Tab 3</li>
+                        <li class="tab-btn" data-tab="tab4">Tab 4</li>
+                        <li class="tab-btn" data-tab="tab5">Tab 5</li>
+                    </ul>
+                    <div class="tab-box-container">
+                        <div class="tab-box tab-items tab1">
+                            Tab Content 1
+                        </div>
+                        <div class="tab-box tab-items tab2">
+                            Tab Content 2
+                        </div>
+                        <div class="tab-box tab-items tab3">
+                            Tab Content 3
+                        </div>
+                        <div class="tab-box tab-items tab4">
+                            Tab Content 4
+                        </div>
+                        <div class="tab-box tab-items tab5">
+                            Tab Content 5
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="tab">
+    <ul class="tab-list">
+        <li class="tab-btn tab-active" data-tab="tab1">Tab 1</li>
+        <li class="tab-btn" data-tab="tab2">Tab 2</li>
+        <li class="tab-btn" data-tab="tab3">Tab 3</li>
+        <li class="tab-btn" data-tab="tab4">Tab 4</li>
+        <li class="tab-btn" data-tab="tab5">Tab 5</li>
+    </ul>
+    <div class="tab-box-container">
+        <div class="tab-box tab-items tab1">
+            Tab Content 1
+        </div>
+        <div class="tab-box tab-items tab2">
+            Tab Content 2
+        </div>
+        <div class="tab-box tab-items tab3">
+            Tab Content 3
+        </div>
+        <div class="tab-box tab-items tab4">
+            Tab Content 4
+        </div>
+        <div class="tab-box tab-items tab5">
+            Tab Content 5
+        </div>
+    </div>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            <p class="section">Filter Tab Vertical</p>
+
+            <div class="tabv">
+                <ul class="tabv-list">
+                    <li class="tabv-btn tabv-active" data-tabv="tabv1">tabv 1</li>
+                    <li class="tabv-btn" data-tabv="tabv2">tabv 2</li>
+                    <li class="tabv-btn" data-tabv="tabv3">tabv 3</li>
+                    <li class="tabv-btn" data-tabv="tabv4">tabv 4</li>
+                    <li class="tabv-btn" data-tabv="tabv5">tabv 5</li>
+                </ul>
+                <div class="tabv-box-container">
+                    <div class="tabv-box tabv-items tabv1">
+                        tabv Content 1
+                    </div>
+                    <div class="tabv-box tabv-items tabv2">
+                        tabv Content 2
+                    </div>
+                    <div class="tabv-box tabv-items tabv3">
+                        tabv Content 3
+                    </div>
+                    <div class="tabv-box tabv-items tabv4">
+                        tabv Content 4
+                    </div>
+                    <div class="tabv-box tabv-items tabv5">
+                        tabv Content 5
+                    </div>
+                </div>
+            </div>
+<xmp><div class="tabv">
+    <ul class="tabv-list">
+        <li class="tabv-btn tabv-active" data-tabv="tabv1">tabv 1</li>
+        <li class="tabv-btn" data-tabv="tabv2">tabv 2</li>
+        <li class="tabv-btn" data-tabv="tabv3">tabv 3</li>
+        <li class="tabv-btn" data-tabv="tabv4">tabv 4</li>
+        <li class="tabv-btn" data-tabv="tabv5">tabv 5</li>
+    </ul>
+    <div class="tabv-box-container">
+        <div class="tabv-box tabv-items tabv1">
+            tabv Content 1
+        </div>
+        <div class="tabv-box tabv-items tabv2">
+            tabv Content 2
+        </div>
+        <div class="tabv-box tabv-items tabv3">
+            tabv Content 3
+        </div>
+        <div class="tabv-box tabv-items tabv4">
+            tabv Content 4
+        </div>
+        <div class="tabv-box tabv-items tabv5">
+            tabv Content 5
+        </div>
+    </div>
+</div>
+</xmp>
+
+            </div>
+            <!-- end  -->
+
+            <!--  -->
+            <div class="deep" id="navhorizontal">
+
+                <div class="size-22 section">Navbar Horizontal</div>
+
+                <!-- doc -->
+
+                <div class="nav-scroll">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                    <a href="#">Link 5</a>
+                    <a href="#">Link 6</a>
+                    <a href="#">Link 7</a>
+                </div>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><div class="nav-scroll">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+    <a href="#">Link 5</a>
+    <a href="#">Link 6</a>
+    <a href="#">Link 7</a>
+</div>
+</xmp>
+
+<!-- end code -->
+
+            </div>
+            <!-- end  -->
+
+            <!--  -->
+            <div class="deep" id="dropdown">
+
+                <div class="size-22 section">Dropdown</div>
+
+                <!-- doc -->
+
+                <ul class="dropbox">
+                    <li class="dropbox-toggle" id="dropboxToggle">
+                        <a>Products <i class="fa fa-angle-down dropbox-arrow"></i></a>
+                        <ul class="dropbox-menu" id="dropboxMenu">
+                            <li><a href="">Link 1</a></li>
+                            <li><a href="">Link 2</a></li>
+                            <li><a href="">Link 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<xmp><ul class="dropbox">
+    <li class="dropbox-toggle" id="dropboxToggle">
+        <a>Products <i class="fa fa-angle-down dropbox-arrow"></i></a>
+        <ul class="dropbox-menu" id="dropboxMenu">
+            <li><a href="">Link 1</a></li>
+            <li><a href="">Link 2</a></li>
+            <li><a href="">Link 3</a></li>
+        </ul>
+    </li>
+</ul>
+</xmp>
+<p class="section">Max 1 Dropdown</p>
+<!-- end code -->
+
+            </div>
+            <!-- end  -->
+
+            <!--  -->
+            <!-- <div class="deep" id="">
+
+                <div class="size-22 section"></div>
+ -->
+                <!-- doc -->
+
+                
+
+                <!-- end doc -->
+
+<!-- code -->
+
+<!-- <xmp>
+</xmp> -->
+
+<!-- end code -->
+
+            <!-- </div> -->
+            <!-- end  -->
+
+        </div>
+        <!-- end layout -->
+    </div>
+    <!-- end content -->
+
+    <!-- script -->
+
+    <!-- cdn jquery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/core.min.js"></script>
+    <script src="vendor/onepagenav/js/onepagenav.js"></script>
+    <script src="theme/js/theme.script.js"></script>
+    <script>
+        $(window).scroll(function(){
+
+            var scroll = $(this).scrollTop();
+            // content grid parallax landing page
+
+            if(scroll > $(".content-group").offset().top - 400){
+                $(".content-group .content-items").each(function(i){
+                    setTimeout(function(){
+                        $(".content-group .content-items").eq(i).addClass("content-items-active");
+                    }, 250 * i);
+                });
+            }else{
+                $(".content-group .content-items").each(function(i){
+                    setTimeout(function(){
+                        $(".content-group .content-items").eq(i).removeClass("content-items-active");
+                    }, 250 * i);
+                });
+            }
+
+            // landing element
+
+            if(scroll > $("#landingElementTop").offset().top - 300){
+                $(".element-top").addClass("landing-element-active");
+            }else{
+                $(".element-top").removeClass("landing-element-active");
+            }
+
+            if(scroll > $("#landingElementBottom").offset().top - 300){
+                $(".element-bottom").addClass("landing-element-active");
+            }else{
+                $(".element-bottom").removeClass("landing-element-active");
+            }
+
+            if(scroll > $("#landingElementRight").offset().top - 300){
+                $(".element-right").addClass("landing-element-active");
+            }else{
+                $(".element-right").removeClass("landing-element-active");
+            }
+
+            if(scroll > $("#landingElementLeft").offset().top - 300){
+                $(".element-left").addClass("landing-element-active");
+            }else{
+                $(".element-left").removeClass("landing-element-active");
+            }
+
+            // end landing element
+
+            if(scroll > $("#toTopActive").offset().top - 0){
+                $(".totop").addClass("totop-active");
+            }else{
+                $(".totop").removeClass("totop-active");
+            }
+
+        });
+    </script>
+    <!-- end script -->
+
+</body>
+<!-- end body -->
+</html>
