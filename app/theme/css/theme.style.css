@@ -1,9 +1,5 @@
-@media(max-width: 992px){
-	.c4-nav-items{
-		overflow: auto;
-		overflow-x: hidden;
-	}
-}
+
+
 @media (max-width: 992px){
 	.c4-container i{
 		display: block;
@@ -190,15 +186,13 @@
 	width: 220px;
 	background-color: #fff;
 	border-right: 1px solid #ddd;
-	overflow: hidden;
+	overflow: auto;
 	transition: 0.5s;
 }
 .c4-nav-items-vendor{
 	width: 300px;
 }
-.c4-nav-items:hover{
-	overflow-y: auto;
-}
+
 .c4-nav-items-list{
 	padding: 0;
 	margin: 0;
