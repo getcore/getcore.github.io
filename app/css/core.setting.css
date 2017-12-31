@@ -1,0 +1,103 @@
+/*------------------------------------------------------------------
+
+[Core Setting]
+
+-------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*owl background*/
+
+.owl-bg1{
+    background-image: url(../img/slider1.jpg);
+}
+.owl-bg2{
+    background-image: url(../img/slider2.jpg);
+}
+.owl-bg3{
+    background-image: url(../img/slider3.jpg);
+}
+
+/*end owl background*/
+/*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*content grid background*/
+
+.content-grid-bg1{
+    background-image: url(../img/slider1.jpg);
+}
+.content-grid-bg2{
+    background-image: url(../img/slider2.jpg);
+}
+.content-grid-bg3{
+    background-image: url(../img/slider3.jpg);
+}
+
+/*end content grid background*/
+/*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*footer background*/
+
+.footer-bg{
+	background-image: url(../img/slider2.jpg);
+}
+
+/*end footer background*/
+/*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*parallax background*/
+
+.parallax-bg{
+	background-image: url(../img/slider3.jpg);
+}
+
+/*end parallax background*/
+/*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*side header bg*/
+
+.side-header-bg{
+	background-image: url(../img/slider2.jpg);
+}
+
+/*end side header bg*/
+/*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*ticket bg*/
+
+.ticket-bg1{
+	background-image: url(../img/slider1.jpg);
+}
+.ticket-bg2{
+	background-image: url(../img/slider2.jpg);
+}
+.ticket-bg3{
+	background-image: url(../img/slider3.jpg);
+}
+
+/*end ticket bg*/
+/*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*contact bg*/
+
+.contact-bg{
+	background-image: url(../img/slider2.jpg);
+}
+
+/*end contact bg*/
+/*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*name card bg*/
+
+.name-card-bg{
+	background-image: url(../img/slider2.jpg);
+}
+
+/*end name card bg*/
+/*-----------------------------------------------------------------*/
