@@ -27,6 +27,7 @@
 }
 
 .owl-carousel {
+  overflow: hidden;
   display: none;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
@@ -74,15 +75,31 @@
   
   .owl-carousel .owl-nav .owl-prev{
     position: absolute;
-    left: 20px;
+    left: -20px;
     top: calc(50% - 50px);
     display: block;
+    opacity: 0;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
   }
   .owl-carousel .owl-nav .owl-next{
     position: absolute;
-    right: 20px;
+    right: -20px;
     top: calc(50% - 50px);
     display: block;
+    opacity: 0;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+  }
+  .owl-carousel:hover .owl-prev{
+    left: 20px;
+  }
+  .owl-carousel:hover .owl-next{
+    right: 20px;
+  }
+  .owl-carousel:hover .owl-prev,
+  .owl-carousel:hover .owl-next{
+    opacity: 1;
   }
   .owl-carousel .owl-dot{
     margin-top: 10px;
