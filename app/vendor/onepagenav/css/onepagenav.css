@@ -62,6 +62,7 @@ Code License      : MIT
 	position: relative;
 }
 .opn-nav-items-list li:hover{
+	-webkit-box-shadow: inset 0 -2px #bbb;
 	box-shadow: inset 0 -2px #bbb;
 }
 .opn-nav-items-list li a{
@@ -82,9 +83,11 @@ Code License      : MIT
 	position: relative;
 }
 .opn-nav-toggle i:hover{
+	-webkit-box-shadow: inset 0 -2px #bbb;
 	box-shadow: inset 0 -2px #bbb;
 }
 .opn-nav-toggle-active i{
+	-webkit-box-shadow: inset 0 -2px #bbb;
 	box-shadow: inset 0 -2px #bbb;
 }
 @media (min-width: 992px){
@@ -104,6 +107,7 @@ Code License      : MIT
 		bottom: 0;
 		background-color: #f1f1f1;
 		width: 0;
+		-webkit-transition: 0.3s;
 		transition: 0.3s;
 		overflow: auto;
 		z-index: 10;
@@ -122,17 +126,149 @@ Code License      : MIT
 	}
 
 	.opn-nav-items-list li:hover{
+		-webkit-box-shadow: inset -2px 0 #bbb!important;
 		box-shadow: inset -2px 0 #bbb!important;
 	}
 
 	/*class plugin one page nav js active*/
 	#nav .current{
+		-webkit-box-shadow: inset -2px 0 #bbb!important;
 		box-shadow: inset -2px 0 #bbb!important;
 	}
 }
 
 /*class plugin one page nav js active*/
 #nav .current{
+	-webkit-box-shadow: inset 0 -2px #bbb;
 	box-shadow: inset 0 -2px #bbb;
 }
+
+/*-----------------------------------------------------------------*/
+/*nav-doc*/
+
+.doc-nav:after,
+.doc-nav:before{
+  display: table;
+  content: '';
+  clear: both;
+}
+.doc-nav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 50px;
+  background-color: #fff;
+  z-index: 9999;
+  border-bottom: 1px solid #ddd;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.doc-nav-logo{
+  float: right;
+  margin-right: 16px;
+}
+.doc-nav-logo img{
+  display: block;
+  padding-top: 5px;
+  width: 40px;
+}
+.doc-nav-items{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 220px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  overflow: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.doc-nav-items-vendor{
+  width: 300px;
+}
+.doc-nav-items-list{
+  padding: 0;
+  margin: 0;
+}
+.doc-nav-items-list li:first-child:hover{
+  -webkit-box-shadow: inset 0 0;
+  box-shadow: inset 0 0;
+}
+.doc-nav-items-list li:last-child{
+  margin-bottom: 16px;
+}
+.doc-nav-items-list li{
+  list-style-type: none;
+  display: block;
+  padding: 6px 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.doc-nav-items-list li:hover{
+  -webkit-box-shadow: inset 2px 0 #444;
+  box-shadow: inset 2px 0 #444;
+}
+#navDoc .current{
+  -webkit-box-shadow: inset 2px 0 #444;
+  box-shadow: inset 2px 0 #444;
+}
+
+.doc-content{
+  padding: 66px 0 0 0;
+  margin-left: 220px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.doc-content-vendor{
+  margin-left: 300px;
+}
+
+.doc-nav-toggle{
+  float: left;
+}
+.doc-nav-toggle i{
+  line-height: 50px;
+  padding: 0 16px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.doc-nav-toggle:hover,
+.doc-nav-toggle-active i{
+	-webkit-box-shadow: inset 0 -2px #bbb;
+	box-shadow: inset 0 -2px #bbb;
+}
+
+@media (max-width: 992px){
+  .doc-nav-items{
+    width: 0;
+  }
+  .doc-content{
+    margin-left: 0;
+  }
+
+  .doc-nav-items-active{
+    width: 220px;
+  }
+  .doc-nav-active{
+    left: 220px;
+    right: -220px;
+  }
+  .doc-window{
+    display: none;
+    position: fixed;
+    left: 220px;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 9997;
+  }
+}
+
+/*end nav doc*/
+/*-----------------------------------------------------------------*/
+
 
