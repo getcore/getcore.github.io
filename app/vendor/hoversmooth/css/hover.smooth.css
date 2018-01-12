@@ -1,0 +1,303 @@
+/*mobile*/
+@media (max-width: 992px){
+	.nav-smooth-window{
+		display: none;
+		background-color: transparent;
+		position: fixed;
+		left: 0;
+		right: 220px;
+		bottom: 0;
+		top: 50px;
+		z-index: 9997;
+	}
+	.nav-smooth.nav-smooth-active{
+		right: 220px;
+		left: -220px;
+	}
+	.nav-smooth .nav-smooth-items.nav-smooth-items-active{
+		width: 220px;
+	}
+	.nav-smooth .nav-smooth-items{
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 0;
+		background-color: rgba(0,0,0,0.8);
+		overflow: auto;
+		overflow-x: hidden;
+		-webkit-transition: 0.4s;
+		transition: 0.4s;
+	}
+	.nav-smooth .nav-smooth-items-list li{
+		float: none;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	/*megadropdown*/
+	.nav-smooth .nav-smooth-items-list li:hover .nav-smooth-megadropdown{
+		visibility: visible;
+		width: 220px;
+	}
+	.nav-smooth .nav-smooth-megadropdown{
+		position: fixed;
+		right: 0;
+		top: 50px;
+		bottom: 0;
+		width: 0;
+		overflow-y: auto!important;
+		overflow-x: hidden;
+		width: 0;
+		z-index: 1;
+		background-color: rgba(0,0,0,0.9);
+	}
+	.nav-smooth .nav-smooth-megadropdown li a{
+		text-align: left;
+	}
+
+	/*dropdown*/
+	.nav-smooth-dropdown-close{
+		width: 0!important;
+	}
+	.nav-smooth .nav-smooth-items-list li:hover .nav-smooth-dropdown{
+		visibility: visible;
+		width: 220px;
+	}
+	.nav-smooth .nav-smooth-dropdown{
+		position: fixed;
+		right: 0;
+		top: 50px;
+		bottom: 0;
+		overflow: auto;
+		overflow-x: hidden;
+		width: 0;
+		z-index: 1;
+		background-color: rgba(0,0,0,0.9);
+	}
+	.nav-smooth .nav-smooth-dropdown li{
+		float: none;
+	}
+	.nav-smooth .nav-smooth-dropdown li a{
+		text-align: left;
+	}
+
+	/*arrow*/
+	.nav-smooth-back,
+	.nav-smooth-arrow{
+		position: absolute;
+		top: 18px;
+		right: 16px;
+	}
+	.nav-smooth-arrow{
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+	.nav-smooth .nav-smooth-items-list li:hover .nav-smooth-arrow{
+		-webkit-transform: rotate(270deg);
+		transform: rotate(270deg);
+	}
+}
+/*end mobile*/
+
+/*nav smooth*/
+.nav-smooth{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 50px;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 9998;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+.nav-smooth-layout:after,
+.nav-smooth-layout:before{
+	display: block;
+	content: "";
+	clear: both;
+}
+.nav-smooth-layout{
+	max-width: 1280px;
+	margin: auto;
+}
+.nav-smooth-logo{
+	float: left;
+	margin-left: 16px;
+}
+.nav-smooth-logo img{
+	display: block;
+	margin: auto;
+	width: 40px;
+	padding-top: 5px;
+}
+.nav-smooth-items{
+	float: right;
+}
+.nav-smooth-items-list > li{
+	float: left;
+}
+.nav-smooth-items-list > li > a{
+	display: block;
+	line-height: 50px;
+	padding: 0 16px;
+	overflow: hidden;
+	color: rgba(255,255,255,0.8);
+}	
+/*nav smooth*/
+
+/*nav smooth toggle*/
+
+.nav-smooth-toggle{
+	float: right;
+}
+.nav-smooth-toggle i{
+	line-height: 50px;
+	padding: 0 16px;
+	display: block;
+	cursor: pointer;
+	color: rgba(255,255,255,0.8);
+	font-size: 22px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.nav-smooth-toggle-active i,
+.nav-smooth-toggle:hover{
+	background-color: rgba(255,255,255,0.1);
+}
+
+@media (min-width: 993px){
+	.nav-smooth-toggle{
+		display: none;
+	}
+}
+
+/*end nav smooth toggle*/
+
+/*nav smooth arrow*/
+.nav-smooth-arrow{
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+.nav-smooth-items-list li:hover .nav-smooth-arrow{
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+/*end nav smooth arrow*/
+
+/*nav smooth hover megadropdown*/
+.nav-smooth .nav-smooth-megadropdown{
+	visibility: hidden;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 50px;
+	width: 0;
+	background-color: rgba(0,0,0,0.8);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+.nav-smooth-megadropdown li a{
+	display: block;
+	line-height: 50px;
+	padding: 0 16px;
+	overflow: hidden;
+	white-space: nowrap;
+	color: rgba(255,255,255,0.9);
+	text-align: right;
+}
+
+@media (min-width: 993px){
+	.nav-smooth .nav-smooth-items-list li:hover .nav-smooth-megadropdown{
+		visibility: visible;
+		width: 100%;
+	}
+}
+.nav-smooth .nav-smooth-items-list li .nav-smooth-megadropdown .da-thumbs-light,
+.nav-smooth .nav-smooth-items-list li .nav-smooth-megadropdown .da-thumbs-light-white{
+	opacity: 0;
+}
+.nav-smooth .nav-smooth-items-list li:hover .nav-smooth-megadropdown .da-thumbs-light,
+.nav-smooth .nav-smooth-items-list li:hover .nav-smooth-megadropdown .da-thumbs-light-white{
+	opacity: 0;
+}
+.nav-smooth .da-thumbs-items .nav-smooth-megadropdown li a:hover .da-thumbs-light,
+.nav-smooth .da-thumbs-items .nav-smooth-megadropdown li a:hover .da-thumbs-light-white{
+	opacity: 1;
+}
+
+/*end nav smooth hover megadropdown*/
+
+/*nav smooth hover dropdown*/
+.nav-smooth-items-list li:hover .nav-smooth-dropdown{
+	visibility: visible;
+	width: 160px;
+}
+.nav-smooth-items-list li .nav-smooth-dropdown .da-thumbs-light,
+.nav-smooth-items-list li .nav-smooth-dropdown .da-thumbs-light-white{
+	opacity: 0;
+}
+.nav-smooth-items-list li:hover .nav-smooth-dropdown .da-thumbs-light,
+.nav-smooth-items-list li:hover .nav-smooth-dropdown .da-thumbs-light-white{
+	opacity: 0;
+}
+.da-thumbs-items .nav-smooth-dropdown li:hover a .da-thumbs-light,
+.da-thumbs-items .nav-smooth-dropdown li:hover a .da-thumbs-light-white{
+	opacity: 1;
+}
+/*end nav smooth hover dropdown*/
+
+/*nav smooth dropdown*/
+.nav-smooth-dropdown{
+	visibility: hidden;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	width: 0;
+	background-color: rgba(0,0,0,0.8);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+.nav-smooth-dropdown li a{
+	display: block;
+	line-height: 50px;
+	padding: 0 16px;
+	overflow: hidden;
+	white-space: nowrap;
+	color: rgba(255,255,255,0.9);
+	text-align: right;
+}
+/*end nav smooth dropdown*/
+
+
+/*hoverdir*/
+.da-thumbs .da-thumbs-items {
+	position: relative;
+}
+.da-thumbs .da-thumbs-items a,
+.da-thumbs .da-thumbs-items a img {
+	display: block;
+	position: relative;
+}
+.da-thumbs .da-thumbs-items a {
+	overflow: hidden;
+}
+.da-thumbs .da-thumbs-items a .da-thumbs-light {
+	display: block;
+	position: absolute;
+	background: rgba(0,0,0,0.8);
+	width: 100%;
+	height: 100%;
+	padding: 16px;
+}
+.da-thumbs .da-thumbs-items a .da-thumbs-light-white {
+	display: block;
+	position: absolute;
+	background: rgba(255,255,255,0.1);
+	width: 100%;
+	height: 100%;
+	padding: 16px;
+}
+/*end hoverdir*/
