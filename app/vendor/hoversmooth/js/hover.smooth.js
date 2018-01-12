@@ -1,0 +1,28 @@
+"use strict";
+$(document).ready(function(){
+	$(".nav-smooth-toggle").click(function(){
+		$(this).toggleClass("nav-smooth-toggle-active");
+		$(".nav-smooth").toggleClass("nav-smooth-active");
+		$(".nav-smooth-items").toggleClass("nav-smooth-items-active");
+		$(".nav-smooth-window").toggle();
+		$("body").toggleClass("overflow-hidden");
+	});
+	$(".nav-smooth-back-toggle").click(function(){
+		$(".nav-smooth-toggle").removeClass("nav-smooth-toggle-active");
+		$(".nav-smooth").removeClass("nav-smooth-active");
+		$(".nav-smooth-items").removeClass("nav-smooth-items-active");
+		$(".nav-smooth-window").hide();
+		$("body").removeClass("overflow-hidden");
+	});
+	$(".nav-smooth-window").click(function(){
+		$(this).hide();
+		$(".nav-smooth-toggle").removeClass("nav-smooth-toggle-active");
+		$(".nav-smooth").removeClass("nav-smooth-active");
+		$(".nav-smooth-items").removeClass("nav-smooth-items-active");
+		$("body").removeClass("overflow-hidden");
+	});
+	$(".nav-smooth-close").hover(function(){
+		$(".nav-smooth-dropdown").toggleClass("nav-smooth-dropdown-close");
+		$(".nav-smooth-megadropdown").toggleClass("nav-smooth-dropdown-close");
+	});
+});
